@@ -62,7 +62,4 @@
 }
 
 @media screen and (orientation: portrait) {
-  .btn-time__container {
-    margin-bottom: 2rem;
-  }
 }

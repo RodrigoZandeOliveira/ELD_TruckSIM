@@ -3,20 +3,7 @@ body {
   width: 100dvw;
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    'sideBar main'
-    'sideBar main';
 }
 
 @media screen and (orientation: portrait) {
-  body {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 1fr;
-    grid-template-areas:
-      'sideBar sideBar'
-      'main main';
-  }
 }
