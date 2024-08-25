@@ -2,15 +2,11 @@
   /* background-color: rgb(43, 0, 0); */
   width: auto;
   height: 100%;
-  padding: 2rem 1rem;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .nav-bar {
