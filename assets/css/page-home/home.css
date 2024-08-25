@@ -1,0 +1,7 @@
+.home-section {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  grid-template-areas: 'shipment time';
+  padding: 2rem;
+}

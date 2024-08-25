@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONT : POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS: General settings -->
+    <link rel="stylesheet" href="/assets/css/general/reset.css" />
+    <link rel="stylesheet" href="/assets/css/general/reusable-classes.css" />
+    <link rel="stylesheet" href="/assets/css/general/styles.css" />
+
+    <!-- CSS: Var -->
+    <link rel="stylesheet" href="/assets/css/var/var-theme-dark.css" />
+
+    <!-- CSS: present in all pages -->
+    <link rel="stylesheet" href="/assets/css/main-elements/side-nav-bar.css" />
+    <link rel="stylesheet" href="/assets/css/main-elements/top-bar.css" />
+
+    <!-- CSS: home page -->
+    <link rel="stylesheet" href="/assets/css/page-home/home.css" />
+    <link rel="stylesheet" href="/assets/css/page-home/shipment-about.css" />
+    <link rel="stylesheet" href="/assets/css/page-home/timer.css" />
+
+    <title>ELD TruckSIM</title>
+  </head>
+
+  <body class="body">
+    <!-- MARK: side nav bar ----------------------------------------------- -->
+    <section class="side-bar">
+      <button class="btn side-bar__btn">HOME</button>
+    </section>
+
+    <!-- MARK: top bar ----------------------------------------------- -->
+    <section class="top-bar">
+      <div class="driver-details">
+        <h3 class="txt__truck">Truck's Model</h3>
+        <h2 class="txt__driver">Driver's name</h2>
+      </div>
+    </section>
+
+    <!-- MARK: home page ----------------------------------------------- -->
+    <section class="home-section">
+      <div class="shipment__container">
+        <div class="shipment-details">
+          <h3 class="title">Current job</h3>
+          <div class="text-container">
+            <p class="text">Trailer:</p>
+            <span class="text-bold">Trailer's type/model</span>
+          </div>
+          <div class="text-container">
+            <p class="text">Cargo:</p>
+            <span class="text-bold">What's being transported</span>
+          </div>
+          <div class="text-container">
+            <p class="text">Weight:</p>
+            <span class="text-bold">The weight of the load</span>
+          </div>
+          <div class="text-container">
+            <p class="text">From:</p>
+            <span class="text-bold">City, State, Country</span>
+          </div>
+          <div class="text-container">
+            <p class="text">To:</p>
+            <span class="text-bold">City, State, Country</span>
+          </div>
+        </div>
+
+        <div class="btn-shipment__container">
+          <button class="btn btn__big">Cancel</button>
+          <button class="btn btn__big">Finish</button>
+        </div>
+      </div>
+
+      <!-- MARK: timer panel ----------------------------------------- -->
+      <div class="time__container">
+        <div class="card-big">
+          <div class="time-big" id="timer"></div>
+        </div>
+
+        <div class="btn-time__container">
+          <button class="btn btn__big" id="btn__reset">
+            <span>Reset</span>
+          </button>
+
+          <button class="btn btn__big" id="btn__play-pause">
+            <span>Drive</span>
+          </button>
+        </div>
+      </div>
+      <!-- ------------------------------------------------------ -->
+    </section>
+
+    <!-- JS scripts ============================================ -->
+    <script src="/assets/js/timer.js"></script>
+  </body>
+</html>
