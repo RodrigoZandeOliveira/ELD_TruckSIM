@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 2rem;
 }
 
 .card-big {
@@ -50,4 +49,13 @@
 }
 
 @media screen and (orientation: portrait) {
+  .timer__container {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: green;
+  }
+
+  .card-big {
+    width: 40%;
+  }
 }

@@ -8,4 +8,7 @@
 }
 
 @media screen and (orientation: portrait) {
+  .home-section {
+    align-items: center;
+  }
 }
