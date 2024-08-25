@@ -1,6 +1,6 @@
 .nav-bar__container {
   /* background-color: rgb(43, 0, 0); */
-  width: 10%;
+  width: auto;
   height: 100%;
   padding: 0 1rem;
   position: absolute;
@@ -15,17 +15,18 @@
 
 .nav-bar {
   background-color: rgba(255, 255, 255, 0.06);
+  height: 100%;
   border-radius: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0.5rem;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .side-bar__btn {
-  width: 6rem;
+  width: 6.5rem;
   aspect-ratio: 1 / 1;
   color: #000000;
   border-radius: 100rem;
