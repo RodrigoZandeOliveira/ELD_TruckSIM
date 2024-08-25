@@ -60,3 +60,23 @@
 .btn__big:active {
   background-color: rgb(111, 168, 255);
 }
+
+@media screen and (orientation: portrait) {
+  .shipment__container {
+    border-bottom: 1px solid #222222;
+    width: 100vw;
+  }
+
+  .shipment-details {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    color: #8e8e8e;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-shipment__container {
+    margin-bottom: 2rem;
+  }
+}

@@ -15,3 +15,10 @@
   color: #ffffff;
   font-weight: 700;
 }
+
+@media screen and (orientation: portrait) {
+  .side-bar {
+    border-bottom: 1px solid #222222;
+    flex-direction: row;
+  }
+}
