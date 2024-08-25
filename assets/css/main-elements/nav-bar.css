@@ -1,17 +1,21 @@
 .nav-bar__container {
+  /* background-color: rgb(43, 0, 0); */
+  width: 10%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   padding: 0 1rem;
-  background-color: rgb(43, 0, 0);
   position: absolute;
   left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-bar {
   background-color: rgba(255, 255, 255, 0.06);
-  border-radius: 100rem;
+  border-radius: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,4 +45,25 @@
 }
 
 @media screen and (orientation: portrait) {
+  .nav-bar__container {
+    height: 10%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-bar {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
 }
