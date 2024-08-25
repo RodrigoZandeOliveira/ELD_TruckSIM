@@ -12,8 +12,12 @@
 .side-bar__btn {
   width: 100%;
   aspect-ratio: 1 / 1;
-  color: #ffffff;
+  color: #717171;
   font-weight: 700;
+}
+
+.side-bar__btn--selected {
+  color: #ffffff;
 }
 
 @media screen and (orientation: portrait) {
