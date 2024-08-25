@@ -7,6 +7,6 @@ body {
   grid-template-columns: 10% 1fr;
   grid-template-rows: 15% 1fr;
   grid-template-areas:
-    'sideBar topBar'
+    'sideBar main'
     'sideBar main';
 }
