@@ -1,17 +1,9 @@
 .home-section {
   grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr 50%;
-  grid-template-areas: 'shipment time';
-  padding: 2rem 2rem 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (orientation: portrait) {
-  .home-section {
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      'time'
-      'shipment';
-    padding: 0;
-  }
 }

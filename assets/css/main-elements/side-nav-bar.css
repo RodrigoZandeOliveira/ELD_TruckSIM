@@ -1,23 +1,35 @@
 .side-bar {
   grid-area: sideBar;
-  border-right: 1px solid #222222;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 100rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
-  gap: 2rem;
+  padding: 0.5rem;
+  gap: 1rem;
+  align-self: center;
 }
 
 .side-bar__btn {
-  width: 100%;
-  flex-grow: 1;
-  color: #717171;
-  font-weight: 700;
+  width: 5.5rem;
+  aspect-ratio: 1 / 1;
+  color: #000000;
+  border-radius: 100rem;
 }
 
-.side-bar__btn--selected {
-  color: #ffffff;
+.btn__icon {
+  font-size: 2.4rem;
+  color: #d1d1d1;
+}
+
+.nav-bar__btn--selected {
+  background-color: #ffffff;
+}
+
+.nav-bar__btn__icon--selected {
+  color: #000000;
 }
 
 @media screen and (orientation: portrait) {

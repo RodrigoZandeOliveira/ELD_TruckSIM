@@ -34,77 +34,72 @@
 
   <body class="body">
     <!-- MARK: side nav bar ----------------------------------------------- -->
-    <section class="side-bar">
-      <button class="btn side-bar__btn side-bar__btn--selected">HOME</button>
-      <button class="btn side-bar__btn">DRIVER</button>
-      <button class="btn side-bar__btn">TRUCK</button>
-      <button class="btn side-bar__btn">JOB</button>
-      <button class="btn side-bar__btn">CONFIG</button>
-    </section>
+    <nav class="side-bar">
+      <ul>
+        <li>
+          <button class="btn side-bar__btn nav-bar__btn--selected">
+            <ion-icon
+              name="home"
+              class="btn__icon nav-bar__btn__icon--selected"
+            ></ion-icon>
+          </button>
+        </li>
+        <li>
+          <button class="btn side-bar__btn">
+            <ion-icon name="person" class="btn__icon"></ion-icon>
+          </button>
+        </li>
+        <li>
+          <button class="btn side-bar__btn">
+            <ion-icon name="car" class="btn__icon"></ion-icon>
+          </button>
+        </li>
+        <li>
+          <button class="btn side-bar__btn">
+            <ion-icon name="cube" class="btn__icon"></ion-icon>
+          </button>
+        </li>
+        <li>
+          <button class="btn side-bar__btn">
+            <ion-icon name="settings" class="btn__icon"></ion-icon>
+          </button>
+        </li>
+      </ul>
+    </nav>
 
     <!-- MARK: home page ----------------------------------------------- -->
     <section class="home-section">
-      <!-- shipment details -->
-      <div class="shipment__container">
-        <div class="shipment-details">
-          <h3 class="title">Current job</h3>
-          <div class="text-container">
-            <p class="text">Driver:</p>
-            <span class="text-bold">Who's the driver</span>
-          </div>
-          <div class="text-container">
-            <p class="text">Truck:</p>
-            <span class="text-bold">Truck model being used</span>
-          </div>
-
-          <div class="text-container">
-            <p class="text">Trailer:</p>
-            <span class="text-bold">Trailer's type/model</span>
-          </div>
-          <div class="text-container">
-            <p class="text">Cargo:</p>
-            <span class="text-bold">What's being transported</span>
-          </div>
-          <div class="text-container">
-            <p class="text">Weight:</p>
-            <span class="text-bold">The weight of the load</span>
-          </div>
-          <div class="text-container">
-            <p class="text">From:</p>
-            <span class="text-bold">City, State, Country</span>
-          </div>
-          <div class="text-container">
-            <p class="text">To:</p>
-            <span class="text-bold">City, State, Country</span>
-          </div>
-        </div>
-
-        <div class="btn-shipment__container">
-          <button class="btn btn__big">Cancel</button>
-          <button class="btn btn__big">Delivered</button>
-        </div>
-      </div>
-
       <!-- timer panel ----------------------------------------- -->
       <div class="time__container">
         <div class="card-big">
           <div class="time-big" id="timer"></div>
-        </div>
 
-        <div class="btn-time__container">
-          <button class="btn btn__big" id="btn__reset">
-            <span>Reset</span>
-          </button>
+          <div class="btn-time__container">
+            <button class="btn btn__big hidden" id="btn__reset">
+              <span>Reset</span>
+            </button>
 
-          <button class="btn btn__big" id="btn__play-pause">
-            <span>Drive</span>
-          </button>
+            <button class="btn btn__big" id="btn__play-pause">
+              <span>Drive</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
     <!-- ------------------------------------------------------ -->
 
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <!-- JS scripts ============================================ -->
+    <!-- js timer -->
     <script src="./assets/js/timer.js"></script>
   </body>
 </html>
