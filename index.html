@@ -7,11 +7,11 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
 
-    <!-- GOOGLE FONT : POPPINS -->
+    <!-- GOOGLE FONT : QUICKSAND -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
 
@@ -22,82 +22,47 @@
     <!-- CSS: Var -->
     <link rel="stylesheet" href="./assets/css/var/var-theme-dark.css" />
     <!-- CSS: present in all pages -->
-    <link rel="stylesheet" href="./assets/css/main-elements/nav-bar.css" />
-    <!-- CSS: home page -->
-    <link rel="stylesheet" href="./assets/css/page-home/home.css" />
-    <link rel="stylesheet" href="./assets/css/page-home/timer.css" />
+    <link rel="stylesheet" href="./assets/css/main-elements/form.css" />
 
     <title>ELD TruckSIM</title>
   </head>
 
   <body class="body">
-    <!-- MARK: side nav bar ----------------------------------------------- -->
-    <nav class="nav-bar__container">
-      <ul class="nav-bar">
-        <li>
-          <button class="btn side-bar__btn nav-bar__btn--selected">
-            <ion-icon
-              name="home"
-              class="btn__icon nav-bar__btn__icon--selected"
-            ></ion-icon>
-          </button>
-        </li>
-        <li>
-          <button class="btn side-bar__btn">
-            <ion-icon name="person" class="btn__icon"></ion-icon>
-          </button>
-        </li>
-        <li>
-          <button class="btn side-bar__btn">
-            <ion-icon name="car" class="btn__icon"></ion-icon>
-          </button>
-        </li>
-        <li>
-          <button class="btn side-bar__btn">
-            <ion-icon name="cube" class="btn__icon"></ion-icon>
-          </button>
-        </li>
-        <li>
-          <button class="btn side-bar__btn">
-            <ion-icon name="settings" class="btn__icon"></ion-icon>
-          </button>
-        </li>
-      </ul>
-    </nav>
+    <main class="main">
+      <!-- MARK: Login Screen -->
+      <section class="section" id="section__login">
+        <div class="form__container">
+          <h2 class="brand">
+            ELD Truck<span class="txt__color txt__bold">SIM</span>
+          </h2>
 
-    <!-- MARK: home page ----------------------------------------------- -->
-    <section class="home-section">
-      <!-- timer panel ----------------------------------------- -->
-      <div class="time__container">
-        <div class="card-big">
-          <div class="time-big" id="timer"></div>
+          <form action="" class="form">
+            <div class="input__container">
+              <label class="txt__input-label" for="input__carrier-name"
+                >Carries's Name</label
+              >
+              <input class="input-field" type="text" id="input__carrier-name" />
+            </div>
 
-          <div class="btn-time__container">
-            <button class="btn btn__big hidden" id="btn__reset">
-              <span>Reset</span>
-            </button>
+            <div class="input__container">
+              <label class="txt__input-label" for="input__driver-name"
+                >Driver's Name</label
+              >
+              <input class="input-field" type="text" id="input__driver-name" />
+            </div>
 
-            <button class="btn btn__big" id="btn__play-pause">
-              <span>Drive</span>
-            </button>
-          </div>
+            <div class="form-btn__container">
+              <input class="btn btn__form" type="button" value="Sign in" />
+            </div>
+          </form>
+
+          <p class="txt__high-contrast txt__version">
+            Version <strong class="txt__bold">0.00</strong>
+          </p>
         </div>
-      </div>
-    </section>
-    <!-- ------------------------------------------------------ -->
-
-    <!-- ionicons -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-
-    <!-- JS scripts ============================================ -->
-    <!-- js timer -->
-    <script src="./assets/js/timer.js"></script>
+      </section>
+      <!-- ---------------------- -->
+      <!-- MARK: Reusable Screens -->
+    </main>
   </body>
 </html>

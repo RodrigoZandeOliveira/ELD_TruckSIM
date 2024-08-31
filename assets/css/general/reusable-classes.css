@@ -8,3 +8,44 @@
   display: none;
   position: absolute;
 }
+
+.section {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  width: 100%;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.txt__color {
+  color: var(--accent-color);
+}
+
+.txt__high-contrast {
+  color: #fff;
+}
+
+.txt__bold {
+  font-weight: 700;
+}
+
+.txt__version {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* ------------------------------------------------ */
+
+@media screen and (orientation: portrait) {
+  .section {
+    padding: 2rem 3rem;
+  }
+}
