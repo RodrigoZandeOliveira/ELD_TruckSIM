@@ -16,6 +16,11 @@
 }
 
 @media screen and (orientation: portrait) {
+  .body {
+    height: 100dvh;
+    width: 100%;
+  }
+
   .main {
     height: 100%;
     width: 100%;
