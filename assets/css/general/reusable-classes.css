@@ -13,6 +13,7 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -22,6 +23,7 @@
   text-align: center;
   font-size: 2.4rem;
   color: #fff;
+  margin-top: 1rem;
 }
 
 .txt__color {
@@ -39,6 +41,7 @@
 .txt__version {
   font-size: 1.4rem;
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 /* ------------------------------------------------ */
