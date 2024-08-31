@@ -1,3 +1,26 @@
+/* HEADER -------------------------------------------- */
+.header {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.brand {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+/* SECTION: Form ------------------------------------- */
+.section__login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FORM: Form ------------------------------------- */
 .form__container {
   /* background-color: rgb(234, 102, 102); */
   width: 30rem;
@@ -6,15 +29,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
-}
-
-/* FORM: Form ------------------------------------- */
-.form {
-  /* background-color: red; */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
 
@@ -49,7 +63,7 @@
 
 /* FORM: Button ------------------------------------- */
 .form-btn__container {
-  /* background-color: red; */
+  width: 100%;
   margin-top: 2rem;
 }
 
@@ -66,12 +80,27 @@
   background-color: #fff;
 }
 
+/* FOOTER -------------------------------------------- */
+.footer {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.txt__version {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
 /* ------------------------------------------------ */
 
 @media screen and (orientation: portrait) {
+  .section__login {
+    padding: 2rem 3rem;
+  }
+
   .form__container {
     width: 100%;
-    justify-content: space-between;
     padding: 2rem 0;
   }
 }
