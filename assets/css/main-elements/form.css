@@ -1,12 +1,12 @@
 .form__container {
   /* background-color: rgb(234, 102, 102); */
   width: 30rem;
-  height: 100%;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 /* FORM: Form ------------------------------------- */
