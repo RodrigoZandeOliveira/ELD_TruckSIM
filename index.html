@@ -28,6 +28,7 @@
       href="./assets/css/main-elements/loading-screen.css"
     />
     <link rel="stylesheet" href="./assets/css/main-elements/select-job.css" />
+    <link rel="stylesheet" href="./assets/css/main-elements/timeline.css" />
 
     <title>ELD TruckSIM</title>
   </head>
@@ -74,6 +75,7 @@
         </footer>
       </section>
       <!-- ---------------------- -->
+
       <!-- MARK: Select Job Screen -->
       <section class="section__select-job hidden" id="section__select-job">
         <div class="section__content-area">
@@ -86,8 +88,72 @@
           </div>
         </div>
 
+        <!-- timeline -->
         <div class="section__timeline-area">
-          <div class="timeline"></div>
+          <div class="timeline">
+            <div class="timeline__status__container">
+              <p class="timeline__status__title">
+                Delivery Progress: <span class="txt__delivery-status">NDA</span>
+              </p>
+            </div>
+
+            <div class="timeline__stages__container">
+              <div class="stage__group-01">
+                <div class="stage">
+                  <div class="stage__circle">1</div>
+                  <div class="stage__line"></div>
+                </div>
+                <div class="stage">
+                  <div class="stage__circle">2</div>
+                  <div class="stage__line"></div>
+                </div>
+                <div class="stage">
+                  <div class="stage__circle">3</div>
+                  <div class="stage__line"></div>
+                </div>
+                <div class="stage">
+                  <div class="stage__circle">4</div>
+                  <div class="stage__line"></div>
+                </div>
+              </div>
+
+              <div class="stage__group-02 hidden">
+                <div class="stage">
+                  <div class="stage__circle">4</div>
+                  <div class="stage__line"></div>
+                </div>
+                <div class="stage">
+                  <div class="stage__circle">5</div>
+                  <div class="stage__line"></div>
+                </div>
+                <div class="stage">
+                  <div class="stage__circle">6</div>
+                  <div class="stage__line"></div>
+                </div>
+              </div>
+
+              <div class="stage__group-03 hidden">
+                <div class="stage">
+                  <div class="stage__circle">6</div>
+                  <div class="stage__line"></div>
+                </div>
+                <div class="stage">
+                  <div class="stage__circle">7</div>
+                  <div class="stage__line"></div>
+                </div>
+                <div class="stage">
+                  <div class="stage__circle">8</div>
+                  <div class="stage__line"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline__stages-legend__container">
+              <div class="stage-legend stage--current"></div>
+              <div class="stage-legend"></div>
+              <div class="stage-legend"></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -114,5 +180,6 @@
 
     <!-- MAKR: Scripts -->
     <script src="./assets/js/login-page.js"></script>
+    <script src="./assets/js/select-job.js"></script>
   </body>
 </html>

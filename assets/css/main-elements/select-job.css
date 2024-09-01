@@ -47,13 +47,6 @@
   padding: 0 2rem 2rem 2rem;
 }
 
-.timeline {
-  background-color: #fff;
-  height: 15rem;
-  width: 100%;
-  border-radius: 2rem;
-}
-
 /* CURRENT STATES ---------------------------------------- */
 .hidden {
   display: none;
@@ -81,7 +74,7 @@
   }
 
   .timeline {
-    height: 10rem;
+    height: 12rem;
     border-radius: 3rem;
   }
 }

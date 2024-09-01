@@ -1,0 +1,128 @@
+.timeline {
+  background-color: #fff;
+  height: 12rem;
+  width: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* TIMELINE TITLE -------------------------------------------- */
+.timeline__status__container {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.timeline__status__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.txt__delivery-status {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* STAGE PROGRESS -------------------------------------------- */
+.timeline__stages__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-y: scroll;
+  padding: 0 2rem;
+}
+
+.stage__group-01 {
+  width: 100%;
+  display: flex;
+}
+
+.stage__group-02 {
+  width: 100%;
+  display: flex;
+}
+
+.stage__group-03 {
+  width: 100%;
+  display: flex;
+}
+
+.stage {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.stage__circle {
+  width: 4.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #c0c0c0ff;
+  overflow: hidden;
+  position: absolute;
+  left: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.4rem solid #ffffff;
+}
+
+.stage__line {
+  width: 100%;
+  height: 1rem;
+  background-color: #c0c0c0ff;
+  margin-left: 2rem;
+}
+
+/* STAGE LEGEND -------------------------------------------- */
+.timeline__stages-legend__container {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stage-legend {
+  width: 5rem;
+  height: 0.75rem;
+  background-color: rgb(189, 189, 189);
+  border-radius: 10rem;
+}
+
+.stage--current {
+  background-color: rgb(90, 90, 90);
+}
+
+/* CURRENT STATES ---------------------------------------- */
+.hidden {
+  display: none;
+}
+
+/* ------------------------------------------------ */
+
+@media screen and (orientation: landscape) {
+  .timeline {
+    height: 11rem;
+    border-radius: 3rem;
+  }
+
+  .timeline__stages__container {
+    padding: 0 3rem;
+  }
+
+  .stage__circle {
+    width: 5rem;
+  }
+
+  .stage__line {
+    height: 1.5rem;
+  }
+}

@@ -6,7 +6,7 @@
 
 .btn__steps {
   padding: 2rem 5rem;
-  border: 1px dotted green;
+  border: 1px dashed green;
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--txt-high-contrast);
@@ -36,5 +36,3 @@
   color: var(--txt-high-contrast);
   text-align: center;
 }
-
-/* ------------------------------------------------ */
