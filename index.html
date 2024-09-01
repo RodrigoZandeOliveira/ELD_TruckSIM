@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="./assets/css/var/var-theme-dark.css" />
     <!-- CSS: present in all pages -->
     <link rel="stylesheet" href="./assets/css/main-elements/form.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/loading-screen.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main-elements/select-job.css" />
 
     <title>ELD TruckSIM</title>
   </head>
@@ -30,7 +35,7 @@
   <body class="body">
     <main class="main">
       <!-- MARK: Login Screen -->
-      <section class="section__login" id="section__login">
+      <section class="section__login" id="section__sign-in">
         <header class="header">
           <h2 class="brand">
             ELD Truck<span class="txt__color txt__bold">SIM</span>
@@ -53,7 +58,12 @@
           </div>
 
           <div class="form-btn__container">
-            <input class="btn btn__form" type="button" value="Sign in" />
+            <input
+              class="btn btn__form"
+              id="btn__form__sign-in"
+              type="submit"
+              value="Sign in"
+            />
           </div>
         </form>
 
@@ -64,7 +74,45 @@
         </footer>
       </section>
       <!-- ---------------------- -->
-      <!-- MARK: Reusable Screens -->
+      <!-- MARK: Select Job Screen -->
+      <section class="section__select-job hidden" id="section__select-job">
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Select a job from the game menu</h3>
+          </div>
+
+          <div class="content-area__content-container">
+            <button class="btn btn__steps">Selected</button>
+          </div>
+        </div>
+
+        <div class="section__timeline-area">
+          <div class="timeline"></div>
+        </div>
+      </section>
+
+      <!-- MARK: Reusable Screens //////////////////////////////////// -->
+      <!-- Loading Screen -->
+      <section
+        class="section__loading-screen hidden"
+        id="section__loading-screen"
+      >
+        <div class="loading-circle loading__circle-1">
+          <div class="loading-circle loading__circle-2">
+            <div class="loading-circle loading__circle-3">
+              <p class="loading__message" id="loading__message"></p>
+              <div class="loading__dots__container">
+                <p class="loading__dot-1">.</p>
+                <p class="loading__dot-2">.</p>
+                <p class="loading__dot-3">.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- MAKR: Scripts -->
+    <script src="./assets/js/login-page.js"></script>
   </body>
 </html>

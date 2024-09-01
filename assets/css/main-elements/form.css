@@ -10,7 +10,6 @@
 
 /* HEADER -------------------------------------------- */
 .header {
-  /* background-color: purple; */
   height: 10rem;
   width: 100%;
   display: flex;
@@ -26,7 +25,6 @@
 
 /* FORM: Form ------------------------------------- */
 .form__container {
-  /* background-color: rgb(234, 102, 102); */
   width: 30rem;
   height: auto;
   display: flex;
@@ -98,6 +96,11 @@
   font-size: 1.4rem;
   font-weight: 300;
   text-align: center;
+}
+
+/* CURRENT STATES ---------------------------------------- */
+.hidden {
+  display: none;
 }
 
 /* ------------------------------------------------ */

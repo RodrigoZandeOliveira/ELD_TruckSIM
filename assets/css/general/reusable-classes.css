@@ -4,9 +4,18 @@
   outline: none;
 }
 
+.btn__steps {
+  padding: 2rem 5rem;
+  border: 1px dotted green;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--txt-high-contrast);
+  border-radius: 1rem;
+}
+
 .hidden {
   display: none;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .txt__color {
@@ -19,6 +28,13 @@
 
 .txt__bold {
   font-weight: 700;
+}
+
+.content-area__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--txt-high-contrast);
+  text-align: center;
 }
 
 /* ------------------------------------------------ */
