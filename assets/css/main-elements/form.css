@@ -53,16 +53,16 @@
 .input-field {
   height: 4rem;
   border-radius: 100rem;
-  background-color: rgb(255, 255, 255, 0.05);
+  background-color: var(--input-field-bg-color);
   outline: none;
-  border: 1px solid rgb(255, 255, 255, 0.1);
+  border: 1px solid var(--input-field-border-color);
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--txt-high-contrast);
   padding: 0 2rem;
 }
 
 .input-field:focus {
-  border: 1px solid rgb(255, 255, 255, 0.6);
+  border: 1px solid var(--input-field-border-focus);
 }
 
 /* FORM: Button ------------------------------------- */
@@ -72,7 +72,7 @@
 }
 
 .btn__form {
-  background-color: #cdcdcd;
+  background-color: var(--btn-bg-color);
   width: 100%;
   height: 4rem;
   border-radius: 100rem;
@@ -81,7 +81,7 @@
 }
 
 .btn__form:active {
-  background-color: #fff;
+  background-color: var(--btn-bg-color-active);
 }
 
 /* FOOTER -------------------------------------------- */
