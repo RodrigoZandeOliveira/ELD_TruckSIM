@@ -91,9 +91,9 @@
 }
 
 .stage-legend {
-  width: 5rem;
-  height: 0.75rem;
-  background-color: rgb(189, 189, 189);
+  width: 4rem;
+  height: 0.5rem;
+  background-color: rgb(220, 220, 220);
   border-radius: 10rem;
 }
 
