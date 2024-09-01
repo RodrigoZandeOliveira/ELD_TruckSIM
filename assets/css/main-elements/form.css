@@ -1,7 +1,21 @@
+/* SECTION: Form ------------------------------------- */
+.section__login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* HEADER -------------------------------------------- */
 .header {
+  /* background-color: purple; */
+  height: 10rem;
   width: 100%;
-  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .brand {
@@ -10,21 +24,11 @@
   color: #fff;
 }
 
-/* SECTION: Form ------------------------------------- */
-.section__login {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* FORM: Form ------------------------------------- */
 .form__container {
   /* background-color: rgb(234, 102, 102); */
   width: 30rem;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,10 +72,10 @@
 }
 
 .btn__form {
+  background-color: #cdcdcd;
   width: 100%;
   height: 4rem;
   border-radius: 100rem;
-  background-color: #cdcdcd;
   font-weight: 700;
   font-size: 1.8rem;
 }
@@ -83,7 +87,11 @@
 /* FOOTER -------------------------------------------- */
 .footer {
   width: 100%;
-  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  padding: 2rem;
 }
 
 .txt__version {
@@ -94,13 +102,10 @@
 
 /* ------------------------------------------------ */
 
-@media screen and (orientation: portrait) {
-  .section__login {
-    padding: 2rem 3rem;
-  }
-
+@media screen and (orientation: landscape) {
   .form__container {
-    width: 100%;
     padding: 2rem 0;
+    min-width: 30rem;
+    max-width: 40rem;
   }
 }
