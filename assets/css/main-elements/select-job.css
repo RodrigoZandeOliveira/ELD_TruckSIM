@@ -2,15 +2,18 @@
   width: 100%;
   height: 100%;
   background-color: var(--bg-color);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 16rem;
+  grid-template-areas:
+    'main'
+    'timeline';
   margin: 0 auto;
 }
 
 /* CONTENT --------------------------------------------------- */
 .section__content-area {
-  height: 100%;
-  padding: 2rem;
+  grid-area: main;
+  padding: 2rem 2rem 0 2rem;
   display: grid;
   grid-template-rows: 8rem 1fr;
   grid-template-areas:
@@ -38,15 +41,6 @@
   align-items: center;
 }
 
-/* DELIVERY TIMELINE -------------------------------------------- */
-.section__timeline-area {
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0 2rem 2rem 2rem;
-}
-
 /* CURRENT STATES ---------------------------------------- */
 .hidden {
   display: none;
@@ -57,12 +51,13 @@
 @media screen and (orientation: landscape) {
   .section__select-job {
     width: 80%;
+    grid-template-rows: 1fr 15rem;
   }
 
   .section__content-area {
     grid-template-rows: 4rem 1fr;
+    padding: 0;
     gap: 0;
-    padding: 0 0 1rem 0;
   }
 
   .content-area__title-container {
@@ -71,10 +66,5 @@
 
   .section__timeline-area {
     padding: 0 0 1rem 0;
-  }
-
-  .timeline {
-    height: 12rem;
-    border-radius: 3rem;
   }
 }

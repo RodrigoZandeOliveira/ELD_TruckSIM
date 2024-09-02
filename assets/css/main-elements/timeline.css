@@ -1,3 +1,15 @@
+/* DELIVERY TIMELINE -------------------------------------------- */
+.section__timeline-area {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+}
+
+/* TIMELINE CARD -------------------------------------------- */
 .timeline {
   background-color: #fff;
   height: 12rem;
@@ -109,7 +121,12 @@
 /* ------------------------------------------------ */
 
 @media screen and (orientation: landscape) {
+  .section__timeline-area {
+    width: 100%;
+  }
+
   .timeline {
+    width: 80%;
     height: 11rem;
     border-radius: 3rem;
   }

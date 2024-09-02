@@ -5,6 +5,7 @@ const sectionLoadingScreen = document.querySelector('#section__loading-screen');
 const loadingMessage = document.querySelector('#loading__message');
 
 const sectionSelectJob = document.querySelector('#section__select-job');
+const sectionTimeline = document.querySelector('#section__timeline');
 
 // Sign In
 btnSignIn.addEventListener('click', function (event) {
@@ -21,5 +22,6 @@ btnSignIn.addEventListener('click', function (event) {
   setTimeout(function () {
     sectionLoadingScreen.classList.add('hidden');
     sectionSelectJob.classList.remove('hidden');
+    sectionTimeline.classList.remove('hidden');
   }, 5000);
 });
