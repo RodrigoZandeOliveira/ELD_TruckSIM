@@ -29,6 +29,30 @@
     />
     <link rel="stylesheet" href="./assets/css/main-elements/select-job.css" />
     <link rel="stylesheet" href="./assets/css/main-elements/timeline.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/proceed-shipper.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/shipper-question-job-available.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/shipper-no-job.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/shipper-company-name.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/shipper-company-location.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/shipper-terms.css"
+    />
 
     <title>ELD TruckSIM</title>
   </head>
@@ -84,15 +108,214 @@
           </div>
 
           <div class="content-area__content-container">
-            <button class="btn btn__steps">Selected</button>
+            <button class="btn btn__steps" id="btn__job-select">
+              Selected
+            </button>
           </div>
         </div>
-
-        <!-- timeline -->
+        <!-- timeline : consider space -->
       </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Proceed to shipper Screen -->
+      <section
+        class="section__proceed-shipper hidden"
+        id="section__proceed-shipper"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Proceed to shipper</h3>
+          </div>
+
+          <div class="content-area__content-container">
+            <button class="btn btn__steps" id="btn__shipper-cancel">
+              Cancel
+            </button>
+            <button class="btn btn__steps" id="btn__shipper-arrived">
+              Arrived
+            </button>
+          </div>
+        </div>
+        <!-- timeline : consider space -->
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Is the Job still available? -->
+      <section
+        class="section__shipper__checkin hidden"
+        id="section__shipper__checkin"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Is the job still available?</h3>
+          </div>
+
+          <div class="content-area__content-container">
+            <button class="btn btn__steps" id="btn__shipper-no-job">No</button>
+            <button class="btn btn__steps" id="btn__shipper-yes-job">
+              Yes
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Job NOT available Select NEW JOB -->
+      <section
+        class="section__shipper__no-job hidden"
+        id="section__shipper__no-job"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">
+              Access menu to select another delivery
+            </h3>
+          </div>
+
+          <div class="content-area__content-container">
+            <button class="btn btn__steps" id="btn__newjob-cancel">
+              Cancel
+            </button>
+            <button class="btn btn__steps" id="btn__newjob-selected">
+              Selected
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Shipper company name -->
+      <section
+        class="section__shipper__company-name hidden"
+        id="section__shipper__company-name"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Shipper information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label class="txt__input-label" for="input__carrier-name"
+                  >From (Compnay):</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__shipper-name"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__shipper-name__next">
+                Next
+              </button>
+
+              <button class="btn btn__steps" id="btn__shipper-name__back">
+                Back
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Shipper company name -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__shipper__company-location"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Shipper information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label class="txt__input-label" for="input__carrier-name"
+                  >From (City/State/Country):</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__shipper-location"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__shipper-location__next">
+                Next
+              </button>
+              <button class="btn btn__steps" id="btn__shipper-location__back">
+                Back
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Shipper company name -->
+      <section
+        class="section__shipper__company-terms hidden"
+        id="section__shipper__company-terms"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">
+              Proceed to the location defined on your map
+            </h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <ol class="list__shipper-terms">
+              <li class="txt__high-contrast">1. Speed Limit 15mp/h;</li>
+              <li class="txt__high-contrast">
+                2. Wear the high visibility reflective vest when outside of the
+                truck;
+              </li>
+              <li class="txt__high-contrast">
+                3. Use gloves when manipulating the tractor and trailer;
+              </li>
+              <li class="txt__high-contrast">4. Don't use the loud horn;</li>
+              <li class="txt__high-contrast">
+                5. Turn off the engine during the loading process;
+              </li>
+              <li class="txt__high-contrast">
+                6. On public roads the max gross weight is 80.000lbs;
+              </li>
+              <li class="txt__high-contrast">
+                7. Turn on Hazard light when backing up;
+              </li>
+              <li class="txt__high-contrast">
+                8. Before loading process slide tandems to the back of the
+                trailer;
+              </li>
+              <li class="txt__high-contrast">
+                9. After loading process slide tandems to the proper position;
+              </li>
+              <li class="txt__high-contrast">10. Be respectfull to others;</li>
+            </ol>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__shipper-terms__checkbox">
+                I have read and agree to the Terms
+              </button>
+              <button class="btn btn__steps" id="btn__shipper-terms__confirm">
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
 
       <!-- MARK: Reusable Screens //////////////////////////////////// -->
-      <!-- Loading Screen -->
+      <!-- LOADING SCREEN -->
       <section
         class="section__loading-screen hidden"
         id="section__loading-screen"
@@ -111,7 +334,7 @@
         </div>
       </section>
 
-      <!-- Timeline -->
+      <!-- TIMELINE -->
       <section class="section__timeline-area hidden" id="section__timeline">
         <div class="timeline">
           <div class="timeline__status__container">
@@ -180,8 +403,14 @@
       </section>
     </main>
 
-    <!-- MAKR: Scripts -->
+    <!-- MARK: Scripts -->
     <script src="./assets/js/login-page.js"></script>
     <script src="./assets/js/select-job.js"></script>
+    <script src="./assets/js/proceed-shipper.js"></script>
+    <script src="./assets/js/shipper-checkin.js"></script>
+    <script src="./assets/js/shipper-no-job.js"></script>
+    <script src="./assets/js/shipper-bol-company-name.js"></script>
+    <script src="./assets/js/shipper-bol-company-location.js"></script>
+    <script src="./assets/js/shipper-terms.js"></script>
   </body>
 </html>

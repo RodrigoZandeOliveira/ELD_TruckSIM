@@ -1,0 +1,69 @@
+.section__proceed-shipper {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  display: grid;
+  grid-template-rows: 1fr 16rem;
+  grid-template-areas:
+    'main'
+    'timeline';
+  margin: 0 auto;
+}
+
+/* CONTENT --------------------------------------------------- */
+.section__content-area {
+  grid-area: main;
+  padding: 2rem 2rem 0 2rem;
+  display: grid;
+  grid-template-rows: 8rem 1fr;
+  grid-template-areas:
+    'title'
+    'content';
+  gap: 2rem;
+}
+
+.content-area__title-container {
+  grid-area: title;
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-area__content-container {
+  grid-area: content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* CURRENT STATES ---------------------------------------- */
+.hidden {
+  display: none;
+}
+
+/* ------------------------------------------------ */
+
+@media screen and (orientation: landscape) {
+  .section__select-job {
+    width: 80%;
+    grid-template-rows: 1fr 15rem;
+  }
+
+  .section__content-area {
+    grid-template-rows: 4rem 1fr;
+    padding: 0;
+    gap: 0;
+  }
+
+  .content-area__title-container {
+    height: 4rem;
+  }
+
+  .section__timeline-area {
+    padding: 0 0 1rem 0;
+  }
+}
