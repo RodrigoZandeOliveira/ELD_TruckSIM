@@ -53,6 +53,22 @@
       rel="stylesheet"
       href="./assets/css/main-elements/shipper-terms.css"
     />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/shipper-go-to-cargo.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/shipper-inspection-reminder.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/shipper-inspection-list.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/main-elements/shipper-bill-of-lading-01.css"
+    />
 
     <title>ELD TruckSIM</title>
   </head>
@@ -314,6 +330,205 @@
       </section>
       <!-- ---------------------- -->
 
+      <!-- MARK: Cargo is ready to be loaded -->
+      <section
+        class="section__shipper__go-to-cargo hidden"
+        id="section__shipper__go-to-cargo"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">
+              Proceed to location defined on your map
+            </h3>
+          </div>
+
+          <div class="content-area__content-container__go-to-cargo">
+            <div class="warning-sign__speed-limit">
+              <p class="txt_warning-sign">Speed <br />Limit</p>
+              <span class="txt__speed-number">15</span>
+              <p class="txt_warning-sign">mp/h</p>
+            </div>
+
+            <button class="btn btn__steps" id="btn__begin-inspection">
+              Begin inspection
+            </button>
+          </div>
+        </div>
+        <!-- timeline : consider space -->
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Begin Inspection > Reminder -->
+      <section
+        class="section__shipper__inspection__reminder hidden"
+        id="section__shipper__inspection__reminder"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">
+              Inspection of trailer and tractor
+            </h3>
+          </div>
+
+          <div class="content-area__content-container__inspection-reminder">
+            <div class="warning-sign__rule">
+              <p class="txt_rule">Wear <br /></p>
+              <span class="txt__rule">Reflective Vest</span>
+            </div>
+
+            <div class="warning-sign__rule">
+              <p class="txt_rule">Wear <br /></p>
+              <span class="txt__rule">Gloves</span>
+            </div>
+
+            <button class="btn btn__steps" id="btn__inspection-reminder__next">
+              Next
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Begin Inspection > Inspection screen -->
+      <section
+        class="section__shipper__inspection__list hidden"
+        id="section__shipper__inspection__list"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Inspection process</h3>
+          </div>
+
+          <div class="content-area__content-container__inspection-list">
+            <ul class="inspection__list">
+              <button class="btn" id="btn__inspection__list-item__tractor">
+                <li class="inspection__list-item">
+                  <p class="txt__list-item">Tractor</p>
+                  <span class="txt__list-item txt__list-item__status--complete"
+                    >No Defects</span
+                  >
+                </li>
+              </button>
+              <button class="btn" id="btn__inspection__list-item__trailer">
+                <li class="inspection__list-item">
+                  <p class="txt__list-item">Trailer</p>
+                  <span
+                    class="txt__list-item txt__list-item__status--incomplete"
+                    >Incomplete</span
+                  >
+                </li>
+              </button>
+            </ul>
+
+            <div class="section__content__btns-container">
+              <button
+                class="btn btn__steps"
+                id="btn__inspection-screen__cancel"
+              >
+                Cancel
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__inspection-screen__finish"
+              >
+                Finish
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Begin Inspection > Inspection tractor -->
+      <section
+        class="section__shipper__inspection__list hidden"
+        id="section__shipper__inspection__tractor"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Tractor Inspection</h3>
+          </div>
+
+          <div class="content-area__content-container__inspection-list">
+            <ul class="inspection__list">
+              <button class="btn btn__steps" id="">No defects</button>
+              <button class="btn btn__steps" id="">With defects</button>
+            </ul>
+
+            <div class="section__content__btns-container">
+              <button
+                class="btn btn__steps"
+                id="btn__inspection-tractor__cancel"
+              >
+                Cancel
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__inspection-tractor__confirm"
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Begin Inspection > Inspection trailer -->
+      <section
+        class="section__shipper__inspection__list hidden"
+        id="section__shipper__inspection__trailer"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Trailer Inspection</h3>
+          </div>
+
+          <div class="content-area__content-container__inspection-list">
+            <ul class="inspection__list">
+              <button class="btn btn__steps" id="">No defects</button>
+              <button class="btn btn__steps" id="">With defects</button>
+            </ul>
+
+            <div class="section__content__btns-container">
+              <button
+                class="btn btn__steps"
+                id="btn__inspection-trailer__cancel"
+              >
+                Cancel
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__inspection-trailer__confirm"
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Bill of Lading -->
+      <section
+        class="section__bill-of-lading__01 hidden"
+        id="section__bill-of-lading__01"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Bill of Lading</h3>
+          </div>
+
+          <div class="content-area__content-container">
+            <button class="btn btn__steps" id="btn__job-select">
+              Add delivery information
+            </button>
+          </div>
+        </div>
+        <!-- timeline : consider space -->
+      </section>
+      <!-- ---------------------- -->
+
       <!-- MARK: Reusable Screens //////////////////////////////////// -->
       <!-- LOADING SCREEN -->
       <section
@@ -412,5 +627,10 @@
     <script src="./assets/js/shipper-bol-company-name.js"></script>
     <script src="./assets/js/shipper-bol-company-location.js"></script>
     <script src="./assets/js/shipper-terms.js"></script>
+    <script src="./assets/js/shipper-go-to-cargo.js"></script>
+    <script src="./assets/js/shipper-inspection-reminder.js"></script>
+    <script src="./assets/js/shipper-inspection-screen.js"></script>
+    <script src="./assets/js/shipper-inspection-trailer.js"></script>
+    <script src="./assets/js/shipper-inspection-tractor.js"></script>
   </body>
 </html>
