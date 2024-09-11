@@ -520,7 +520,7 @@
           </div>
 
           <div class="content-area__content-container">
-            <button class="btn btn__steps" id="btn__job-select">
+            <button class="btn btn__steps" id="btn__add-delivery-information">
               Add delivery information
             </button>
           </div>
@@ -528,6 +528,571 @@
         <!-- timeline : consider space -->
       </section>
       <!-- ---------------------- -->
+
+      <!-- BILL OF LADING -->
+      <!-- MARK: Shipper company name -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__carrier-name"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Carrier information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label class="txt__input-label" for="input__bol__carrier-name"
+                  >Carrier name:</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__bol__carrier-name"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__bol__carrier-name__next">
+                Next
+              </button>
+              <button class="btn btn__steps" id="btn__bol__carrier-name__back">
+                Back
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__carrier-name__cancel"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Driver ID -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__driver-id"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Driver ID</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label class="txt__input-label" for="input__bol__driver-id"
+                  >Driver ID:</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__bol__driver-id"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__bol__driver-id__next">
+                Next
+              </button>
+              <button class="btn btn__steps" id="btn__bol__driver-id__back">
+                Back
+              </button>
+              <button class="btn btn__steps" id="btn__bol__driver-id__cancel">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Truck Brand & Model -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__truck-model"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Truck information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label class="txt__input-label" for="input__bol__truck-model"
+                  >Truck brand & model</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__bol__truck-model"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__bol__truck-model__next">
+                Next
+              </button>
+              <button class="btn btn__steps" id="btn__bol__truck-model__back">
+                Back
+              </button>
+              <button class="btn btn__steps" id="btn__bol__truck-model__cancel">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Truck Milage at shipper -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__truck-milage-shipper"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Truck information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label
+                  class="txt__input-label"
+                  for="input__bol__truck-milage-shipper"
+                  >Truck milage at shipper</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__bol__truck-milage-shipper"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button
+                class="btn btn__steps"
+                id="btn__bol__truck-milage-shipper__next"
+              >
+                Next
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__truck-milage-shipper__back"
+              >
+                Back
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__truck-milage-shipper__cancel"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Trailer ownership -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__trailer-owner"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Trailer information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <h3 class="txt__input-label">Who owns the trailer?</h3>
+              <div class="checkbox__container">
+                <input
+                  class="checkbox-field"
+                  type="checkbox"
+                  id="checkbox__bol__trailer-owner"
+                />
+                <label
+                  class="txt__checkbox-label txt__high-contrast"
+                  for="checkbox__bol__trailer-owner"
+                  >Carrier</label
+                >
+              </div>
+              <div class="checkbox__container">
+                <input
+                  class="checkbox-field"
+                  type="checkbox"
+                  id="checkbox__bol__trailer-owner"
+                />
+                <label
+                  class="txt__checkbox-label txt__high-contrast"
+                  for="checkbox__bol__trailer-owner"
+                  >Shipper</label
+                >
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__bol__trailer-owner__next">
+                Next
+              </button>
+              <button class="btn btn__steps" id="btn__bol__trailer-owner__back">
+                Back
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__trailer-owner__cancel"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Trailer plate number -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__trailer-plate"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Trailer information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label class="txt__input-label" for="input__bol__trailer-plate"
+                  >Trailer plate number</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__bol__trailer-plate"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__bol__trailer-plate__next">
+                Next
+              </button>
+              <button class="btn btn__steps" id="btn__bol__trailer-plate__back">
+                Back
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__trailer-plate__cancel"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Cargo Load Content -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__cargo-load"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Cargo Information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label class="txt__input-label" for="input__bol__cargo-load"
+                  >What's being transported?</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__bol__cargo-load"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__bol__cargo-load__next">
+                Next
+              </button>
+              <button class="btn btn__steps" id="btn__bol__cargo-load__back">
+                Back
+              </button>
+              <button class="btn btn__steps" id="btn__bol__cargo-load__cancel">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Cargo Load Weight -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__cargo-weight"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Cargo Information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label class="txt__input-label" for="input__bol__cargo-weight"
+                  >Load's weight</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__bol__cargo-weight"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__bol__cargo-weight__next">
+                Next
+              </button>
+              <button class="btn btn__steps" id="btn__bol__cargo-weight__back">
+                Back
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__cargo-weight__cancel"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Trip to company (destination/receiver) -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__trip-to-company"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Trip Information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label
+                  class="txt__input-label"
+                  for="input__bol__trip-to-company"
+                  >To (company name)</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__bol__trip-to-company"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button
+                class="btn btn__steps"
+                id="btn__bol__trip-to-company__next"
+              >
+                Next
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__trip-to-company__back"
+              >
+                Back
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__trip-to-company__cancel"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Trip to city (destination/location) -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__trip-to-city"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Trip Information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label class="txt__input-label" for="input__bol__trip-to-city"
+                  >To (City/State/Country)</label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  id="input__bol__trip-to-city"
+                />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__bol__trip-to-city__next">
+                Next
+              </button>
+              <button class="btn btn__steps" id="btn__bol__trip-to-city__back">
+                Back
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__trip-to-city__cancel"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Price Information -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__price"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Price Information</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <form class="form__container" action="" class="form">
+              <div class="input__container">
+                <label class="txt__input-label" for="input__bol__price"
+                  >How much it will cost:</label
+                >
+                <input class="input-field" type="text" id="input__bol__price" />
+              </div>
+            </form>
+
+            <div class="section__content__btns-container">
+              <button class="btn btn__steps" id="btn__bol__price__next">
+                Next
+              </button>
+              <button class="btn btn__steps" id="btn__bol__price__back">
+                Back
+              </button>
+              <button class="btn btn__steps" id="btn__bol__price__cancel">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- MARK: Generate Delivery Number -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__generate-number"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">Generate delivery number</h3>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <button
+              class="btn btn__steps"
+              id="btn__bol__generate-number__generate"
+            >
+              Generate
+            </button>
+
+            <div class="section__content__btns-container">
+              <button
+                class="btn btn__steps"
+                id="btn__bol__generate-number__back"
+              >
+                Back
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__generate-number__cancel"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- LOADING SCREEN  -->
+
+      <!-- MARK: Send Delivery Number to Carrier -->
+      <section
+        class="section__shipper__company-location hidden"
+        id="section__bol__delivery-number"
+      >
+        <div class="section__content-area">
+          <div class="content-area__title-container">
+            <h3 class="content-area__title">The delivery number is:</h3>
+            <p class="content-area__title">000.000</p>
+          </div>
+
+          <div class="content-area__content-container__bill-of-lading">
+            <button class="btn btn__steps" id="btn__bol__delivery-number__send">
+              Send to Carrier
+            </button>
+
+            <div class="section__content__btns-container">
+              <button
+                class="btn btn__steps"
+                id="btn__bol__delivery-number__back"
+              >
+                Back
+              </button>
+              <button
+                class="btn btn__steps"
+                id="btn__bol__delivery-number__back"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- -->
+
+      <!-- LOADING SCREEN  -->
 
       <!-- MARK: Reusable Screens //////////////////////////////////// -->
       <!-- LOADING SCREEN -->
@@ -632,5 +1197,6 @@
     <script src="./assets/js/shipper-inspection-screen.js"></script>
     <script src="./assets/js/shipper-inspection-trailer.js"></script>
     <script src="./assets/js/shipper-inspection-tractor.js"></script>
+    <script src="./assets/js/delivery-information.js"></script>
   </body>
 </html>

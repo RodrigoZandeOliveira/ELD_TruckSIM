@@ -4,9 +4,6 @@ const btnInspectionFinish = document.querySelector(
 const sectionBillOfLading01 = document.querySelector(
   '#section__bill-of-lading__01'
 );
-const sectionShipperInspectionList = document.querySelector(
-  '#section__shipper__inspection__list'
-);
 
 btnInspectionFinish.addEventListener('click', function (event) {
   event.preventDefault();
@@ -27,7 +24,6 @@ btnInspectionFinish.addEventListener('click', function (event) {
 });
 
 // ---------------------------
-// LIBRARY INSPECTION SCREEN
 const btnInspectionListItemTractor = document.querySelector(
   '#btn__inspection__list-item__tractor'
 );
@@ -45,7 +41,6 @@ const sectionInspectionTrailer = document.querySelector(
 
 // ---------------------------
 
-// GO TO INSPECTION TRACTOR
 btnInspectionListItemTractor.addEventListener('click', function (event) {
   event.preventDefault();
 
@@ -53,7 +48,6 @@ btnInspectionListItemTractor.addEventListener('click', function (event) {
   sectionInspectionTractor.classList.remove('hidden');
 });
 
-// GO TO INSPECTION TRAILER
 btnInspectionListItemTrailer.addEventListener('click', function (event) {
   event.preventDefault();
 
