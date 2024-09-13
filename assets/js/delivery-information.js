@@ -410,3 +410,167 @@ btnBolGenerateNumberBack.addEventListener('click', function (event) {
   // Previous Page
   sectionBolPrice.classList.remove('hidden');
 });
+
+// DELIVERY INFORMATION | PAGE 14 : "Generated Delivery Number to send to Carrier"
+const btnBolSendNumberToCarrierSend = document.querySelector(
+  '#btn__bol__delivery-number__send'
+);
+const btnBolSendNumberToCarrierBack = document.querySelector(
+  '#btn__bol__delivery-number__back'
+);
+const sectionBolConfirmInformation = document.querySelector(
+  '#section__bol__confirm-info'
+);
+
+// next
+btnBolSendNumberToCarrierSend.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionSendGeneratedNumber.classList.add('hidden');
+
+  sectionLoadingScreen.classList.remove('hidden');
+
+  // Update the loading message
+  loadingMessage.innerHTML = 'Updating';
+
+  // Hide the loading screen after 4 seconds (4000 milliseconds)
+  setTimeout(function () {
+    sectionLoadingScreen.classList.add('hidden');
+    sectionBolConfirmInformation.classList.remove('hidden'); // Next Page
+  }, 1000);
+});
+
+// back
+btnBolSendNumberToCarrierBack.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionSendGeneratedNumber.classList.add('hidden');
+
+  // Previous Page
+  sectionGenerateDeliveryNumber.classList.remove('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE 15 : "Confirm info on Bill of Lading and send to Carrier"
+const btnBolConfirmInfoConfirm = document.querySelector(
+  '#btn__bol__confirm-info__confirm'
+);
+const btnBolConfirmInfoBack = document.querySelector(
+  '#btn__bol__confirm-info__back'
+);
+const sectionShipperCheckOut = document.querySelector(
+  '#section__shipper__check-out'
+);
+
+// next
+btnBolConfirmInfoConfirm.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionBolConfirmInformation.classList.add('hidden');
+
+  sectionLoadingScreen.classList.remove('hidden');
+
+  // Update the loading message
+  loadingMessage.innerHTML = 'Updating';
+
+  // Hide the loading screen after 4 seconds (4000 milliseconds)
+  setTimeout(function () {
+    sectionLoadingScreen.classList.add('hidden');
+    sectionTimeline.classList.remove('hidden');
+    sectionShipperCheckOut.classList.remove('hidden'); // Next Page
+  }, 1000);
+});
+
+// back
+btnBolConfirmInfoBack.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionBolConfirmInformation.classList.add('hidden');
+
+  // Previous Page
+  sectionSendGeneratedNumber.classList.remove('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE 16 : "Shipper Check-out"
+const btnShipperCheckOut = document.querySelector('#btn__shipper__check-out');
+const sectionShipperDeliveryBol = document.querySelector(
+  '#section__shipper__delivery-bol'
+);
+
+// next
+btnShipperCheckOut.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionShipperCheckOut.classList.add('hidden');
+
+  // Next Page
+  sectionShipperDeliveryBol.classList.remove('hidden');
+  sectionTimeline.classList.add('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE 17 : "Shipper Check-out : Delivery Bill of Lading"
+const btnShipperDeliveredBolYes = document.querySelector(
+  '#btn__shipper__delivered-bol__yes'
+);
+const btnShipperDeliveredBolBack = document.querySelector(
+  '#btn__shipper__delivered-bol__back'
+);
+const sectionShipperTripTips = document.querySelector(
+  '#section__shipper__trip-tips'
+);
+
+// next
+btnShipperDeliveredBolYes.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionShipperDeliveryBol.classList.add('hidden');
+
+  // Next Page
+  sectionShipperTripTips.classList.remove('hidden');
+});
+
+// back
+btnShipperDeliveredBolBack.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionShipperDeliveryBol.classList.add('hidden');
+
+  // Next Page
+  sectionShipperTripTips.classList.remove('hidden');
+  sectionTimeline.classList.remove('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE 17 : "Shipper Check-out : Trip Tips"
+const btnShipperTripTipsConfirm = document.querySelector(
+  '#btn__shipper__trip-tips__confirm'
+);
+
+const sectionOnTheRoad = document.querySelector('#section__on-the-road');
+
+// next
+btnShipperTripTipsConfirm.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionShipperTripTips.classList.add('hidden');
+
+  // Show the Loading Screen
+  sectionLoadingScreen.classList.remove('hidden');
+
+  // Update the loading message
+  loadingMessage.innerHTML = 'Updating';
+
+  // Hide the loading screen after 4 seconds (4000 milliseconds)
+  setTimeout(function () {
+    sectionLoadingScreen.classList.add('hidden');
+    sectionTimeline.classList.remove('hidden');
+    sectionOnTheRoad.classList.remove('hidden');
+    // Next Page
+  }, 1000);
+});
