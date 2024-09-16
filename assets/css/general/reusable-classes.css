@@ -36,3 +36,12 @@
   color: var(--txt-high-contrast);
   text-align: center;
 }
+
+.section__btns__container {
+  flex-direction: column;
+}
+
+.section__content__container__vertical {
+  flex-direction: column;
+  gap: 10rem;
+}

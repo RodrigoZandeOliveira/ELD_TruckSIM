@@ -551,7 +551,7 @@ const btnShipperTripTipsConfirm = document.querySelector(
   '#btn__shipper__trip-tips__confirm'
 );
 
-const sectionOnTheRoad = document.querySelector('#section__on-the-road');
+const sectionHomePage = document.querySelector('#section__home-page');
 
 // next
 btnShipperTripTipsConfirm.addEventListener('click', function (event) {
@@ -570,7 +570,436 @@ btnShipperTripTipsConfirm.addEventListener('click', function (event) {
   setTimeout(function () {
     sectionLoadingScreen.classList.add('hidden');
     sectionTimeline.classList.remove('hidden');
-    sectionOnTheRoad.classList.remove('hidden');
+    sectionHomePage.classList.remove('hidden');
     // Next Page
   }, 1000);
+});
+
+// DELIVERY INFORMATION | PAGE HOME : "home page"
+const btnHomeReceiverCheckIn = document.querySelector(
+  '#btn__home__receiver__check-in'
+);
+
+const sectionReceiverCheckIn = document.querySelector(
+  '#section__receiver__check-in'
+);
+
+// Access Receiver Check-In Page
+btnHomeReceiverCheckIn.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionHomePage.classList.add('hidden');
+  sectionTimeline.classList.add('hidden');
+
+  // Show the Loading Screen
+  sectionLoadingScreen.classList.remove('hidden');
+
+  // Update the loading message
+  loadingMessage.innerHTML = 'Loading';
+
+  // Hide the loading screen after 4 seconds (4000 milliseconds)
+  setTimeout(function () {
+    sectionLoadingScreen.classList.add('hidden');
+    sectionReceiverCheckIn.classList.remove('hidden');
+    // Next Page
+  }, 1000);
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : "check-in page"
+const btnReceiverCheckInArrived = document.querySelector(
+  '#btn__receiver__check-in--arrived'
+);
+const btnReceiverCheckInBack = document.querySelector(
+  '#btn__receiver__check-in--back'
+);
+
+const sectionReceiverCompanyTerms = document.querySelector(
+  '#section__receiver__company-terms'
+);
+
+// Access Receiver Check-In Page
+btnReceiverCheckInArrived.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverCheckIn.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverCompanyTerms.classList.remove('hidden');
+});
+
+// back to home page
+btnReceiverCheckInBack.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverCheckIn.classList.add('hidden');
+
+  // Show the Loading Screen
+  sectionLoadingScreen.classList.remove('hidden');
+
+  // Update the loading message
+  loadingMessage.innerHTML = 'Loading';
+
+  // Hide the loading screen after 4 seconds (4000 milliseconds)
+  setTimeout(function () {
+    sectionLoadingScreen.classList.add('hidden');
+    sectionTimeline.classList.remove('hidden');
+    sectionHomePage.classList.remove('hidden'); // Previews Page
+  }, 1000);
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : "Receiver Terms page"
+const btnReceiverTermsArrived = document.querySelector(
+  '#btn__receiver-terms__confirm'
+);
+
+const sectionReceiverGoToDock = document.querySelector(
+  '#section__receiver__go-to-dock'
+);
+
+// Access Receiver Check-In Page
+btnReceiverTermsArrived.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverCompanyTerms.classList.add('hidden');
+
+  // Show the Loading Screen
+  sectionLoadingScreen.classList.remove('hidden');
+
+  // Update the loading message
+  loadingMessage.innerHTML = 'Loading';
+
+  // Hide the loading screen after 4 seconds (4000 milliseconds)
+  setTimeout(function () {
+    sectionLoadingScreen.classList.add('hidden');
+    sectionTimeline.classList.remove('hidden');
+    sectionReceiverGoToDock.classList.remove('hidden'); // Next Page
+  }, 1000);
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : "Tracktor & Trailer Inspection reminder speed limit page"
+const btnReceiverBeginInspection = document.querySelector(
+  '#btn__receiver__begin-inspection'
+);
+
+const sectionReceiverInspectionReminder = document.querySelector(
+  '#section__receiver__inspection__reminder'
+);
+
+// Access Receiver Inspection Reminder
+btnReceiverBeginInspection.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  //   // Current Page
+  sectionReceiverGoToDock.classList.add('hidden');
+  sectionTimeline.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverInspectionReminder.classList.remove('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : "Tracktor & Trailer Inspection page"
+const btnReceiverInspectionReminderNext = document.querySelector(
+  '#btn__receiver__inspection-reminder--next'
+);
+
+const sectionReceiverInspectionList = document.querySelector(
+  '#section__receiver__inspection__list'
+);
+
+// Access Receiver Inspection Reminder
+btnReceiverBeginInspection.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverInspectionReminder.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverInspectionList.classList.remove('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : "Inspection List page"
+const btnReceiverInspectionTractor = document.querySelector(
+  '#btn__receiver__inspection__list-item__tractor'
+);
+const sectionReceiverInspectionTractor = document.querySelector(
+  '#section__receiver__inspection__tractor'
+);
+const btnReceiverInspectionTrailer = document.querySelector(
+  '#btn__receiver__inspection__list-item__trailer'
+);
+const sectionReceiverInspectionTrailer = document.querySelector(
+  '#section__receiver__inspection__trailer'
+);
+const btnReceiverInspectionFinish = document.querySelector(
+  '#btn__receiver__inspection-screen--finish'
+);
+const sectionBolTruckMilageReceiver = document.querySelector(
+  '#section__bol__truck-milage-receiver'
+);
+
+// Access inspection tractor
+btnReceiverInspectionTractor.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverInspectionList.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverInspectionTractor.classList.remove('hidden');
+});
+
+// Access inspection tractor
+btnReceiverInspectionTrailer.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverInspectionList.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverInspectionTrailer.classList.remove('hidden');
+});
+
+// Confirm Inspection > Next Page
+btnReceiverInspectionFinish.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverInspectionList.classList.add('hidden');
+
+  // Next Page
+  sectionBolTruckMilageReceiver.classList.remove('hidden');
+});
+
+// "Tractor Inspection page"
+const btnReceiverInspectionTractorConfirm = document.querySelector(
+  '#btn__inspection-tractor--back'
+);
+const btnReceiverInspectionTractorBack = document.querySelector(
+  '#btn__inspection-tractor--confirm'
+);
+
+btnReceiverInspectionTractorConfirm.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverInspectionTractor.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverInspectionList.classList.remove('hidden');
+});
+
+btnReceiverInspectionTractorBack.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverInspectionTractor.classList.add('hidden');
+
+  // Previews Page
+  sectionReceiverInspectionList.classList.remove('hidden');
+});
+
+// "Trailer Inspection page"
+const btnReceiverInspectionTrailerConfirm = document.querySelector(
+  '#btn__receiver__inspection-trailer--confirm'
+);
+const btnReceiverInspectionTrailerBack = document.querySelector(
+  '#btn__receiver__inspection-trailer--back'
+);
+
+btnReceiverInspectionTrailerConfirm.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverInspectionTrailer.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverInspectionList.classList.remove('hidden');
+});
+
+btnReceiverInspectionTrailerBack.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverInspectionTrailer.classList.add('hidden');
+
+  // Previews Page
+  sectionReceiverInspectionList.classList.remove('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : Update Delivery Information "Truck Milage at receiver"
+const btnBolTruckMilageReceiverNext = document.querySelector(
+  '#btn__bol__truck-milage-receiver--next'
+);
+const btnBolTruckMilageReceiverBack = document.querySelector(
+  '#btn__bol__truck-milage-receiver--back'
+);
+
+const sectionBolUpdatedInformation = document.querySelector(
+  '#section__bol__confirm-updated-info'
+);
+
+btnBolTruckMilageReceiverNext.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionBolTruckMilageReceiver.classList.add('hidden');
+
+  // Next Page
+  sectionBolUpdatedInformation.classList.remove('hidden');
+});
+
+btnBolTruckMilageReceiverBack.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionBolTruckMilageReceiver.classList.add('hidden');
+
+  // Previews page
+  sectionReceiverInspectionList.classList.remove('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : Confirm Updated Delivery Information (BOL)
+const btnBolUpdatedInfoConfirm = document.querySelector(
+  '#btn__bol__confirm-updated-info--confirm'
+);
+const btnBolUpdatedInfoBack = document.querySelector(
+  '#btn__bol__confirm-updated-info--back'
+);
+const sectionReceiverCheckOut = document.querySelector(
+  '#section__receiver__checkout'
+);
+
+btnBolUpdatedInfoConfirm.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  sectionBolUpdatedInformation.classList.add('hidden');
+
+  // Show the Loading Screen
+  sectionLoadingScreen.classList.remove('hidden');
+
+  // Update the loading message
+  loadingMessage.innerHTML = 'Updating';
+
+  // Hide the loading screen after 4 seconds (4000 milliseconds)
+  setTimeout(function () {
+    sectionLoadingScreen.classList.add('hidden');
+    sectionTimeline.classList.remove('hidden');
+    sectionReceiverCheckOut.classList.remove('hidden'); // Next Page
+  }, 1000);
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : Receiver Check-Out
+const btnReceiverCheckOut = document.querySelector('#btn__receiver__check-out');
+const sectionReceiverDelivered = document.querySelector(
+  '#section__receiver__delivered'
+);
+
+btnReceiverCheckOut.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverCheckOut.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverDelivered.classList.remove('hidden');
+  sectionTimeline.classList.add('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : B.O.L. Delivered at the gate
+const btnReceiverBolDeliveredBack = document.querySelector(
+  '#btn__receiver__bol-delivered--back'
+);
+const btnReceiverBolDeliveredDelivered = document.querySelector(
+  '#btn__receiver__bol-delivered--delivered'
+);
+const sectionReceiverEndTip = document.querySelector(
+  '#section__receiver__end-tip'
+);
+
+btnReceiverBolDeliveredDelivered.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverDelivered.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverEndTip.classList.remove('hidden');
+});
+
+btnReceiverBolDeliveredBack.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverDelivered.classList.add('hidden');
+
+  // Previews Page
+  sectionReceiverCheckOut.classList.remove('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : End Tips
+const btnReceiverEndTipOk = document.querySelector(
+  '#btn__receiver__end-tip--ok'
+);
+const sectionReceiverDeliveryCompleted = document.querySelector(
+  '#section__receiver__checkout__delivery-completed'
+);
+
+btnReceiverEndTipOk.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverEndTip.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverDeliveryCompleted.classList.remove('hidden');
+  sectionTimeline.classList.remove('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : Finish Delivery
+const btnReceiverDeliveryFinish = document.querySelector(
+  '#btn__receiver__delivery__finish'
+);
+
+const sectionReceiverTravelTerms = document.querySelector(
+  '#section__receiver__travel-terms'
+);
+
+btnReceiverDeliveryFinish.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current Page
+  sectionReceiverDeliveryCompleted.classList.add('hidden');
+  sectionTimeline.classList.add('hidden');
+
+  // Next Page
+  sectionReceiverTravelTerms.classList.remove('hidden');
+});
+
+// DELIVERY INFORMATION | PAGE RECEIVER : Road Safety Tips
+const btnReceiverRoadTermsConfirm = document.querySelector(
+  '#btn__receiver__road-terms__confirm'
+);
+
+btnReceiverRoadTermsConfirm.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Current page
+  sectionReceiverTravelTerms.classList.add('hidden');
+
+  // Show the loading screen
+  sectionLoadingScreen.classList.remove('hidden');
+
+  // Update the loading message
+  loadingMessage.innerHTML = 'Updating';
+
+  // Hide the loading screen after 4 seconds (4000 milliseconds)
+  setTimeout(function () {
+    sectionLoadingScreen.classList.add('hidden');
+    sectionSelectJob.classList.remove('hidden'); // Next page (Begin again)
+    sectionTimeline.classList.remove('hidden');
+  }, 3000);
 });
