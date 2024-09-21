@@ -1,0 +1,12 @@
+.btn__form {
+  background-color: var(--btn-bg-color);
+  width: 100%;
+  height: 4rem;
+  border-radius: 100rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.btn__form:active {
+  background-color: var(--btn-bg-color-active);
+}

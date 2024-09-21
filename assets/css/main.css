@@ -1,0 +1,34 @@
+/*  */
+/*  */
+/* TEXT: Fonts */
+/*  */
+/* GOOGLE FONT : QUICKSAND */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/*  */
+/*  */
+/* CSS: General settings */
+/*  */
+@import url(./general/reset.css);
+@import url(./general/reusable-classes.css);
+@import url(./general/styles.css);
+
+/*  */
+/*  */
+/* CSS: Var */
+/*  */
+@import url(./var/var-theme-dark.css);
+@import url(./var/var-text.css);
+
+/*  */
+/*  */
+/* CSS: Components */
+/*  */
+/* Screen */
+@import url(./components/screen/screen.css);
+
+/* Form */
+@import url(./components/form/form.css);
+@import url(./components/form/label.css);
+@import url(./components/form/input-field.css);
+@import url(./components/form/btn-submit.css);
