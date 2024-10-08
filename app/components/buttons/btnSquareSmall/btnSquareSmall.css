@@ -1,0 +1,31 @@
+.btn__square-small {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  max-height: 6rem;
+}
+
+.btn__square-small__icon {
+  width: 4rem;
+  height: 4rem;
+  min-height: 3rem;
+  min-width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ICONS */
+
+.icon--back {
+  background-image: url(../../../icons/icon-chevron-back.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon--menu {
+  background-image: url(../../../icons/icon-menu.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

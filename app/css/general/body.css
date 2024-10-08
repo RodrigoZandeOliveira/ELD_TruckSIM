@@ -1,12 +1,14 @@
 .body {
   height: 100dvh;
   width: 100%;
-  font-family: 'Quicksand', sans-serif;
+  font-family: var(--font-family);
   background-color: var(--bg-color);
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .main {

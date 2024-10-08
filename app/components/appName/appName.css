@@ -1,0 +1,9 @@
+.txt__app-name {
+  font-size: var(--font-size-medium);
+  color: var(--txt-color-high-contrast);
+  font-weight: var(--font-weight-bold);
+}
+
+.txt__app-name__accent-color {
+  color: var(--accent-color-primary);
+}

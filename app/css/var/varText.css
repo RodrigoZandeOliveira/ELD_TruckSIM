@@ -1,0 +1,15 @@
+:root {
+  --font-family: 'Quicksand', sans-serif;
+
+  --font-size-small: 1.2rem;
+  --font-size-normal: 1.4rem;
+  --font-size-medium: 1.8rem;
+  --font-size-big: 2.4rem;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
+
+  --txt-color-high-contrast: #ffffff;
+  --txt-color-low-contrast: #6b6b6b;
+}

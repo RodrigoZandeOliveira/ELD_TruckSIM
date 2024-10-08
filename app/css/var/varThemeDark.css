@@ -1,0 +1,24 @@
+:root {
+  /* Main Elements */
+  --bg-color: #000000;
+
+  --card-bg-color: #161616;
+
+  /* Buttons */
+  --txt-high-contrast: #ffffff;
+
+  /* Buttons */
+  --btn-bg-color: #cdcdcd;
+  --btn-bg-color-active: #ffffff;
+
+  /* Input field */
+  --input-field-border-color: #666666ff;
+  --input-field-border-focus-color: #ffffff;
+
+  --input-field-label-primary-color: #ffffff;
+  --input-field-label-secondary-color: #666666ff;
+
+  /* Accent Color */
+  --accent-color-primary: #0054ffff;
+  --accent-color-secondary: #3578ff;
+}

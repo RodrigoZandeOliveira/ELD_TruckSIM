@@ -1,0 +1,9 @@
+.txt__app-v {
+  font-size: var(--font-size-normal);
+  color: var(--txt-color-low-contrast);
+}
+
+.txt__app-version {
+  font-weight: var(--font-weight-bold);
+  color: var(--txt-color-high-contrast);
+}

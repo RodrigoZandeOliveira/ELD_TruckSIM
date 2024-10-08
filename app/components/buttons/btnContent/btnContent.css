@@ -1,0 +1,30 @@
+/* Component : CONTENT BUTTON + LABEL */
+.btn-content {
+  width: 30rem;
+  height: 6rem;
+  border-radius: 0.5rem;
+  border: 0.3rem solid var(--accent-color-secondary);
+}
+
+.btn-content__label {
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
+  color: var(--txt-high-contrast);
+}
+
+/* Different types of content buttons */
+.btn--confirm {
+  background-color: var(--accent-color-primary);
+}
+
+.btn--confirm:active {
+  background-color: var(--accent-color-secondary);
+}
+
+.btn--cancel {
+  background-color: #151515ff;
+}
+
+.btn--cancel:active {
+  background-color: #151515ff;
+}

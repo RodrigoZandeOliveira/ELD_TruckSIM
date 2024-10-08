@@ -1,0 +1,8 @@
+:root {
+  --border-radius-small: 1rem;
+  --border-radius-normal: 2rem;
+
+  --padding-small: 1rem;
+  --padding-normal: 2rem;
+  --padding-big: 4rem;
+}

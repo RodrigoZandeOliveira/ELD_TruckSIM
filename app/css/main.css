@@ -1,0 +1,45 @@
+/* ------------------------------------- */
+/*  */
+/* TEXT: Fonts */
+/*  */
+/* GOOGLE FONT : QUICKSAND */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* ------------------------------------- */
+/*  */
+/* CSS: General settings */
+/*  */
+@import url(./general/reset.css);
+@import url(./general/btn.css);
+@import url(./general/body.css);
+
+/* ------------------------------------- */
+/*  */
+/* CSS: Var */
+/*  */
+@import url(./var/varThemeDark.css);
+@import url(./var/varText.css);
+@import url(./var/varComponents.css);
+
+/*  */
+/*  */
+/* CSS: Components */
+/*  */
+
+/* App Name */
+@import url(../components/appName/appName.css);
+
+/* Screen */
+@import url(../components/screenTemplate/templateDefault/templateDefault.css);
+@import url(../screens/login/loginScreen.css);
+
+/* Butons */
+@import url(../components/buttons/btnSquareSmall/btnSquareSmall.css);
+@import url(../components/buttons/btnContent/btnContent.css);
+
+/* Input Field */
+@import url(../components/inputField/inputField.css);
+@import url(../components/form/loginForm/loginForm.css);
+
+/* App Version */
+@import url(../components/appVersion/appVersion.css);
