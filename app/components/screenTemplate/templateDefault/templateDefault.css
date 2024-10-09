@@ -7,12 +7,13 @@
   grid-template-areas:
     'header'
     'main';
+  overflow: hidden;
 }
 
 /* Screen : primary containers */
 .header {
   grid-area: header;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +23,7 @@
 
 .main {
   grid-area: main;
-  width: 100%;
+  /* width: 100%; */
   display: grid;
   grid-template-rows: 1fr 15rem;
   grid-template-areas:
@@ -78,10 +79,6 @@
   }
 
   .action-content__container {
-    grid-area: bottom-content;
-    padding: var(--padding-normal);
-    display: flex;
-    justify-content: center;
     align-items: flex-end;
   }
 }
