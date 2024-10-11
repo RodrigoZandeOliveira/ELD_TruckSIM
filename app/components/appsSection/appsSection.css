@@ -1,0 +1,19 @@
+.section-apps__wrap {
+  width: 100%;
+  height: fit-content;
+}
+
+.section-apps__title {
+  font-size: var(--font-size-normal);
+  color: var(--txt-high-contrast);
+  margin-bottom: 1rem;
+}
+
+/* Apps container */
+.section-apps__btns-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

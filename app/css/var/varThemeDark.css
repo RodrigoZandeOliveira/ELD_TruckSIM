@@ -1,13 +1,14 @@
 :root {
   /* Main Elements */
   --bg-color: #000000;
-
   --card-bg-color: #161616;
+  --timeline-card: #ffffff;
 
   /* Buttons */
   --txt-high-contrast: #ffffff;
 
   /* Buttons */
+  /* Need to add app buttons */
   --btn-bg-color: #cdcdcd;
   --btn-bg-color-active: #ffffff;
 
@@ -20,5 +21,5 @@
 
   /* Accent Color */
   --accent-color-primary: #0054ffff;
-  --accent-color-secondary: #3578ff;
+  --accent-color-secondary: #0083f9ff;
 }

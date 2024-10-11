@@ -26,20 +26,31 @@
 /* CSS: Components */
 /*  */
 
+/* Template */
+@import url(../components/screenTemplate/templateDefault/templateDefault.css);
+
 /* App Name */
 @import url(../components/appName/appName.css);
-
-/* Screen */
-@import url(../components/screenTemplate/templateDefault/templateDefault.css);
-@import url(../screens/login/loginScreen.css);
 
 /* Butons */
 @import url(../components/buttons/btnSquareSmall/btnSquareSmall.css);
 @import url(../components/buttons/btnContent/btnContent.css);
+@import url(../components/buttons/btnApp/btnApp.css);
+@import url(../components/buttons/btnSteps/btnSteps.css);
 
 /* Input Field */
 @import url(../components/inputField/inputField.css);
 @import url(../components/form/loginForm/loginForm.css);
 
+/* Timeline */
+@import url(../components/timeline/timeline.css);
+
 /* App Version */
 @import url(../components/appVersion/appVersion.css);
+
+/* Section BTNs Apps */
+@import url(../components/appsSection/appsSection.css);
+
+/* Screen */
+@import url(../screens/login/loginScreen.css);
+@import url(../screens/home/homeScreen.css);

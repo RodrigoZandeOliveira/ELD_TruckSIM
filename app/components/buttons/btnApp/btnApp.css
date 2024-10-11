@@ -1,7 +1,50 @@
 .btn-app {
+  width: calc(50% - 0.5rem);
+  max-width: 23rem;
+  height: 12rem;
+
+  background-color: #121212ff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
 }
 
 .btn-app__icon {
+  /* border: 1px solid white; */
+  width: 2.4rem;
+  aspect-ratio: 1/1;
+  min-width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-app__txt-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn-app__title {
+  font-size: var(--font-size-normal);
+  color: var(--txt-high-contrast);
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+}
+
+.btn-app__subtitle {
+  font-size: var(--font-size-normal);
+  color: var(--txt-high-contrast);
+  font-weight: var(--font-weight-regular);
+  text-align: left;
+}
+
+/* EVENT */
+.btn-app:active {
+  background-color: #151515ff;
 }
 
 /* ICONS */
@@ -18,6 +61,10 @@
 }
 
 .icon--fueling {
+  background-image: url(../../../icons/Icon_Temp_funnel-outline.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .icon--rest-break {

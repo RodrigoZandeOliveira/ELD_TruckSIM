@@ -36,9 +36,10 @@
 /* Screen : secondary containers */
 .main-content__container {
   grid-area: main-content;
+  padding: 0 3rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .action-content__container {
@@ -60,6 +61,8 @@
 /*  */
 /* RESPONSIVENESS */
 /*  */
+
+/* All the pages and elements needs a rework! */
 
 @media screen and (orientation: landscape) {
   .screen {

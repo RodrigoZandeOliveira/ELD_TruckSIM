@@ -1,20 +1,25 @@
 import { body } from '../../../scripts/main.js';
 import { btnSquareSmall } from '../../buttons/btnSquareSmall/btnSquareSmall.js';
+// Import App Name
+import { appName } from '../../appName/appName.js';
 
+export let screenID;
 export let header;
 export let btnMenu = btnSquareSmall('icon--menu', 'menu');
+const appNameTitle = appName();
 export let headerTitle;
 export let cardMainContent;
 export let sectionActionContentContainer;
 export let screenStorageContainer;
 
-export function templateDefault(screenTitle) {
+export function templateDefault(id) {
   // CHILD ELEMENTS
   // headerTitle = document.createElement('h1');
   // headerTitle.setAttribute('class', 'header__title');
   // headerTitle.textContent = screenTitle;
 
-  headerTitle = screenTitle;
+  headerTitle = appNameTitle;
+  screenID = `screen__${id}`;
 
   // Main > Section Main Content Container > card
   cardMainContent = document.createElement('div');
@@ -44,6 +49,7 @@ export function templateDefault(screenTitle) {
   // Screen
   const screen = document.createElement('div');
   screen.setAttribute('class', 'screen');
+  screen.setAttribute('id', screenID);
 
   // Append Buttons to Header
   header.appendChild(btnMenu);

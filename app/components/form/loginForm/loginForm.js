@@ -5,7 +5,11 @@ const inputFieldDriver = inputField(`Driver's name`, 'driver-name');
 
 // import : BTN CONTENT
 import { btnContent } from '../../buttons/btnContent/btnContent.js';
-const btnContentLogin = btnContent('Login', 'btn__login', 'btn--confirm');
+export const btnContentLogin = btnContent(
+  'Login',
+  'btn__login',
+  'btn--confirm'
+);
 
 // Declaring formID for use
 export let formID;
