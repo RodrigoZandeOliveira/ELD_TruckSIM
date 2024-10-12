@@ -8,7 +8,6 @@
   justify-content: center;
   gap: 6rem;
   padding: 0;
-  /* background-color: green; */
 }
 
 /* FORM: Inputs Wrap ------------------------------------- */
@@ -25,12 +24,20 @@
   margin-top: 2rem;
 }
 
-/* ------------------------------------------------ */
+/*  */
+/*  */
+/* RESPONSIVENESS ================================================== */
+/*  */
 
-@media screen and (orientation: landscape) {
+/* ====== MOBILE ====== */
+/* MOBILE & LANDSCAPE */
+/* Already Default */
+
+/* MOBILE & LANDSCAPE */
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
   .form {
-    padding: 2rem 0;
     min-width: 30rem;
     max-width: 40rem;
+    gap: 3rem;
   }
 }

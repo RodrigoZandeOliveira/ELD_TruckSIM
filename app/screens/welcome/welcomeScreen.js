@@ -8,8 +8,11 @@ import { btnContent } from '../../components/buttons/btnContent/btnContent.js';
 
 import { appVersion } from '../../components/appVersion/appVersion.js';
 
+export let btnWelcomeGetStarted;
+export let btnWelcomeAbout;
+
 export function welcomeScreen() {
-  templateDefault();
+  templateDefault('welcome-screen');
 
   // MAIN CONTENT CONTAINER
   // Main card
@@ -36,18 +39,14 @@ export function welcomeScreen() {
   mainWelcomeTitle.innerHTML = `Welcome to <br/><span class="welcome__app-name">SIMTruck Logger</span>`;
 
   // Btn : Get Started!
-  const btnWelcomeGetStarted = btnContent(
+  btnWelcomeGetStarted = btnContent(
     'Get Started!',
     'welcome__get-started',
     'btn--primary'
   );
 
   // Btn : About
-  const btnWelcomeAbout = btnContent(
-    'About',
-    'welcome__about',
-    'btn--secondary'
-  );
+  btnWelcomeAbout = btnContent('About', 'welcome__about', 'btn--secondary');
 
   // ACTION CONTAINER
   // Action container

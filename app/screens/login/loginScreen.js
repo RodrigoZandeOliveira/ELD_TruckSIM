@@ -6,8 +6,8 @@
 // Import Template : Default
 import {
   templateDefault,
-  cardMainContent,
-  sectionActionContentContainer,
+  mainContentCard,
+  mainActionCard,
 } from '../../components/screenTemplate/templateDefault/templateDefault.js';
 
 // Import Login Form
@@ -21,29 +21,55 @@ const loginFormComponent = loginForm();
 import { appVersion } from '../../components/appVersion/appVersion.js';
 const appVersionComponent = appVersion();
 
-import { body } from '../../scripts/main.js';
+import { btnContent } from '../../components/buttons/btnContent/btnContent.js';
 
 // Export the login screen
-export function screenLogin() {
+export function loginScreen() {
   templateDefault('login');
 
-  const loginScreenComponent = document.createElement('div');
-  loginScreenComponent.setAttribute('class', 'screen__login__container');
+  // MAIN CONTENT CONTAINER
+  // Main card
+  const mainLoginContainer = document.createElement('div');
+  mainLoginContainer.setAttribute('class', 'main-login__container');
 
-  loginScreenComponent.appendChild(loginFormComponent);
+  const mainLoginTitleContainer = document.createElement('div');
+  mainLoginTitleContainer.setAttribute('class', 'main-login__title__container');
 
-  cardMainContent.appendChild(loginScreenComponent);
-  sectionActionContentContainer.appendChild(appVersionComponent);
+  const mainLoginContentContainer = document.createElement('div');
+  mainLoginContentContainer.setAttribute(
+    'class',
+    'main-login__content__container'
+  );
 
-  return { cardMainContent, sectionActionContentContainer };
+  const mainLoginTitle = document.createElement('h2');
+  mainLoginTitle.setAttribute('class', 'main-login__title');
+  mainLoginTitle.textContent = `Your company's information`;
+
+  // ACTION CONTAINER
+  // Action container
+  const actionContainer = document.createElement('div');
+  actionContainer.setAttribute('class', 'login__action-container');
+
+  // Btn : Back
+  const btnLoginBack = btnContent(
+    'Back',
+    'login__back',
+    'btn--secondary',
+    'btn--secondary-small'
+  );
+
+  // APPEND CHILD
+  mainLoginTitleContainer.appendChild(mainLoginTitle);
+
+  mainLoginContentContainer.appendChild(loginFormComponent);
+
+  mainLoginContainer.appendChild(mainLoginTitleContainer);
+  mainLoginContainer.appendChild(mainLoginContentContainer);
+
+  actionContainer.appendChild(btnLoginBack);
+  mainActionCard.appendChild(actionContainer);
+
+  mainContentCard.appendChild(mainLoginContainer);
+
+  return { mainContentCard, mainActionCard };
 }
-
-// import { loginScript } from '../../scripts/loginScript/loginScript.js';
-import { screenHome } from '../home/homeScreen.js';
-btnContentLogin.addEventListener('click', function (event) {
-  event.preventDefault();
-
-  let loginScreenToRemove = document.querySelector('#screen__login');
-  const changeOfScreen = body.removeChild(loginScreenToRemove);
-  screenHome();
-});

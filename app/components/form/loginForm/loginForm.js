@@ -8,7 +8,7 @@ import { btnContent } from '../../buttons/btnContent/btnContent.js';
 export const btnContentLogin = btnContent(
   'Login',
   'btn__login',
-  'btn--confirm'
+  'btn--primary'
 );
 
 // Declaring formID for use
@@ -17,12 +17,12 @@ export let formID;
 export function loginForm() {
   formID = 'login-form';
 
-  const inputLoginContainer = document.createElement('div');
-  inputLoginContainer.setAttribute('class', 'login__input__wrap');
-
   const form = document.createElement('form');
   form.setAttribute('class', 'form');
   form.setAttribute('id', formID);
+
+  const inputLoginContainer = document.createElement('div');
+  inputLoginContainer.setAttribute('class', 'login__input__wrap');
 
   // Append Child Elements
   inputLoginContainer.appendChild(inputFieldCarrier);

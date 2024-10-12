@@ -7,7 +7,7 @@
 let btnContentID;
 let btnContentLabelID;
 
-export function btnContent(label, id, btnCategoryClass) {
+export function btnContent(label, id, btnCategoryClass, btnNewClass) {
   // Create IDs dynamically
   btnContentID = `btn-content__${id}`;
   btnContentLabelID = `btn-content__label__${id}`;
@@ -20,7 +20,10 @@ export function btnContent(label, id, btnCategoryClass) {
 
   // Create Button
   const btnContent = document.createElement('button');
-  btnContent.setAttribute('class', `btn btn-content ${btnCategoryClass}`);
+  btnContent.setAttribute(
+    'class',
+    `btn btn-content ${btnCategoryClass} ${btnNewClass}`
+  );
   btnContent.setAttribute('id', btnContentID);
 
   // Append label to button

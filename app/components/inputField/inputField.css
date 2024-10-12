@@ -8,13 +8,12 @@
 
 .input__field {
   height: 5rem;
-  border-radius: 0.5rem;
   background-color: transparent;
   outline: none;
-  border: 0.1rem solid var(--input-field-border-color);
+  border: none;
+  border-bottom: 0.1rem solid var(--accent-color-primary);
   font-size: 1.8rem;
   color: var(--txt-high-contrast);
-  padding: 0 2rem;
   position: relative;
   transition: 150ms ease-in-out;
 }
@@ -22,18 +21,16 @@
 .input__label {
   font-size: var(--font-size-normal);
   font-weight: 300;
-  color: var(--input-field-label-primary-color);
+  color: var(--txt-high-contrast);
   position: absolute;
   transform: translateY(120%);
-  margin-left: 2rem;
-  padding: 0 1rem;
   transition: 150ms ease-in-out;
 }
 
 /* Input field : FOCUS */
 
 .input__field:focus {
-  border: 1px solid var(--input-field-border-focus-color);
+  border-bottom: 1px solid var(--accent-color-primary-active);
 }
 
 .input__field:focus ~ .input__label {
@@ -41,10 +38,7 @@
   font-weight: 300;
   color: var(--input-field-label-primary-color);
   position: absolute;
-  background-color: var(--bg-color);
   transform: translateY(-50%);
-  margin-left: 2rem;
-  padding: 0 1rem;
 }
 
 .input__label--fixed-position {
@@ -52,8 +46,5 @@
   font-weight: 300;
   color: var(--input-field-label-secondary-color);
   position: absolute;
-  background-color: var(--bg-color);
   transform: translateY(-50%);
-  margin-left: 2rem;
-  padding: 0 1rem;
 }
