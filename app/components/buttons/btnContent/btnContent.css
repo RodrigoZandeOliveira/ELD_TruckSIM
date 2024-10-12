@@ -4,7 +4,6 @@
   height: 6rem;
   border-radius: 100rem;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-content__label {
