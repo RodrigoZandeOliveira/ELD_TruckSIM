@@ -20,6 +20,8 @@
   --input-field-label-secondary-color: #666666ff;
 
   /* Accent Color */
-  --accent-color-primary: #0054ffff;
-  --accent-color-secondary: #0083f9ff;
+  --accent-color-primary: #ff4900ff;
+  --accent-color-primary-active: #ff753f;
+
+  --accent-color-secondary: #ff490040;
 }

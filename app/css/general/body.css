@@ -4,20 +4,14 @@
 
 .body {
   height: 100dvh;
-  width: 100%;
-  font-family: var(--font-family);
+  width: 100vw;
+  font-family: var(--font-family-primary);
   background-color: var(--bg-color);
   position: relative;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-}
-
-.main {
-  height: 100%;
-  width: 100%;
 }
 
 /* @media screen and (orientation: landscape) {

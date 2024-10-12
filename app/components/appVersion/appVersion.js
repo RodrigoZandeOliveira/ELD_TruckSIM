@@ -7,7 +7,7 @@
 export let version;
 
 export function appVersion() {
-  version = '0.02.0';
+  version = '0.03.0';
 
   const txtV = document.createElement('p');
   txtV.setAttribute('class', 'txt__app-v');

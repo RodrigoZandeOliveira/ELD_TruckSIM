@@ -1,0 +1,75 @@
+/* MAIN CONTENT */
+.main-welcome__container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-welcome__title__container {
+  height: 14rem;
+  min-height: 14rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-welcome__title {
+  text-align: center;
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-normal);
+  color: var(--txt-color-high-contrast);
+  line-height: 2.5rem;
+}
+
+.welcome__app-name {
+  font-family: var(--font-family-secondary);
+}
+
+.main-welcome__content__container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* ACTION CONTAINER */
+.welcome__action-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+/*  */
+/* RESPONSIVENESS ================================================== */
+/*  */
+
+/* ====== MOBILE ====== */
+/* MOBILE & LANDSCAPE */
+/* Already Default */
+
+/* MOBILE & LANDSCAPE */
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+  .main-welcome__container {
+    flex-direction: row;
+  }
+
+  .main-welcome__title__container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .main-welcome__content__container {
+    width: 50%;
+    height: 100%;
+  }
+}

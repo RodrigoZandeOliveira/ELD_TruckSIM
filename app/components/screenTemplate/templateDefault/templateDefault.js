@@ -6,37 +6,15 @@ import { appName } from '../../appName/appName.js';
 export let screenID;
 export let header;
 export let btnMenu = btnSquareSmall('icon--menu', 'menu');
+export let btnSettings = btnSquareSmall('icon--settings', 'settings');
 const appNameTitle = appName();
-export let headerTitle;
-export let cardMainContent;
-export let sectionActionContentContainer;
-export let screenStorageContainer;
+export let mainContentCard;
+export let mainActionCard;
 
 export function templateDefault(id) {
   // CHILD ELEMENTS
-  // headerTitle = document.createElement('h1');
-  // headerTitle.setAttribute('class', 'header__title');
-  // headerTitle.textContent = screenTitle;
-
-  headerTitle = appNameTitle;
+  let headerTitle = appNameTitle;
   screenID = `screen__${id}`;
-
-  // Main > Section Main Content Container > card
-  cardMainContent = document.createElement('div');
-  cardMainContent.setAttribute('class', 'main-content__card');
-  cardMainContent.setAttribute('id', 'main-content__card');
-
-  // Screen / Main Section / Section Main Content Container
-  const sectionMainContentContainer = document.createElement('section');
-  sectionMainContentContainer.setAttribute('class', 'main-content__container');
-
-  // Screen / Main / ACTION Container
-  sectionActionContentContainer = document.createElement('section');
-  sectionActionContentContainer.setAttribute(
-    'class',
-    'action-content__container'
-  );
-  sectionActionContentContainer.setAttribute('id', 'action-content');
 
   // Screen / HEADER
   header = document.createElement('header');
@@ -46,17 +24,37 @@ export function templateDefault(id) {
   const main = document.createElement('main');
   main.setAttribute('class', 'main');
 
+  // Screen / Main Section / Section Main Content Container
+  const sectionMainContentContainer = document.createElement('section');
+  sectionMainContentContainer.setAttribute('class', 'main-content__container');
+
+  // Screen / Main Section / Section Main Content Container / Main Card
+  mainContentCard = document.createElement('div');
+  mainContentCard.setAttribute('class', 'main-content__card');
+
+  // Screen / Main / ACTION Container
+  const sectionActionContentContainer = document.createElement('section');
+  sectionActionContentContainer.setAttribute('class', 'main-action__container');
+
+  // Screen / Main / ACTION Container
+  mainActionCard = document.createElement('div');
+  mainActionCard.setAttribute('class', 'main-action__card');
+
   // Screen
   const screen = document.createElement('div');
   screen.setAttribute('class', 'screen');
   screen.setAttribute('id', screenID);
 
+  // APPEND CHILD --------------------------------------------------------------
   // Append Buttons to Header
   header.appendChild(btnMenu);
   header.appendChild(headerTitle);
+  header.appendChild(btnSettings);
 
-  // Append Main Content Card to the Section Main Content
-  sectionMainContentContainer.appendChild(cardMainContent);
+  sectionMainContentContainer.appendChild(mainContentCard);
+
+  // Append Action Content Card to the action container
+  sectionActionContentContainer.appendChild(mainActionCard);
 
   // Append the Main Content & Action container to the main
   main.appendChild(sectionMainContentContainer);

@@ -4,6 +4,8 @@
 /*  */
 /* GOOGLE FONT : QUICKSAND */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* GOOGLE FONT : DAYS ONE */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Days+One&display=swap');
 
 /* ------------------------------------- */
 /*  */
@@ -52,5 +54,6 @@
 @import url(../components/appsSection/appsSection.css);
 
 /* Screen */
+@import url(../screens/welcome/welcomeScreen.css);
 @import url(../screens/login/loginScreen.css);
 @import url(../screens/home/homeScreen.css);

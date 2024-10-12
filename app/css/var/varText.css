@@ -1,5 +1,6 @@
 :root {
-  --font-family: 'Quicksand', sans-serif;
+  --font-family-primary: 'Quicksand', sans-serif;
+  --font-family-secondary: 'Archivo Black', sans-serif;
 
   --font-size-small: 1.2rem;
   --font-size-normal: 1.4rem;
