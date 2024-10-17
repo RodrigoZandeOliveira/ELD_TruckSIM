@@ -164,9 +164,25 @@
     border-right: 1px solid var(--accent-color-primary);
   }
 
+  .main-home__title__container,
+  .main-home__apps-title__container {
+    height: 4rem;
+    min-height: 4rem;
+  }
+
   .main-home__apps__container {
     height: 100%;
     width: 50%;
+  }
+
+  .main-home__apps-carrousel__container {
+    gap: 0.75rem;
+    padding-left: 1rem;
+  }
+
+  .main-home__btns-apps__container {
+    height: fit-content;
+    min-height: auto;
   }
 
   .home__action-container {
