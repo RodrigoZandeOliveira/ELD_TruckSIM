@@ -1,74 +1,82 @@
-/* TIMELINE MAIN CARD */
 .timeline__card {
   width: 100%;
   height: 100%;
-  background-color: var(--timeline-card);
-  border-radius: 3rem;
+  max-width: 60rem;
+  max-height: 7rem;
+  /* border: 1px dashed var(--accent-color-primary); */
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
+  border-radius: 1rem;
+}
+
+.timeline__progress-bar__container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
-/* HEADER */
-.timeline__header {
+.timeline__full-bar {
+  height: 0.5rem;
   width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.timeline__title {
-  font-size: var(--font-size-normal);
-  color: var(--txt-color-high-contrast-inverted);
-  font-weight: var(--font-weight-bold);
-}
-
-/* CONTENT */
-.timeline__content-container {
-  width: 100%;
-  height: 100%;
-  /* background-color: rgb(0, 68, 255); */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.timeline__progress-bar {
-  width: 100%;
-  height: 1.5rem;
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.progress-bar__small {
-  width: 20%;
-  height: 100%;
-  background-color: #13d700ff;
-}
-
-.progress-bar__big {
-  width: 60%;
-  height: 100%;
-  background-color: #c0c0c0ff;
-}
-
-.progress-bar {
+  background-color: var(--accent-color-secondary);
   border-radius: 100rem;
+  /* overflow: hidden; */
 }
 
-.progress-steps__container {
+.timeline__adaptable-bar {
+  width: 25%;
+  height: 100%;
+  border-radius: 100rem;
+  background-color: var(--accent-color-primary);
+  justify-content: flex-end;
+  display: flex;
+  position: relative;
+  box-shadow: 0 0 10px var(--accent-color-primary);
+}
+
+.timeline__txt__container {
   width: 100%;
   height: fit-content;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .timeline__txt {
-  font-size: var(--font-size-normal);
-  font-weight: var(--font-weight-normal);
-  color: var(--txt-color-high-contrast-inverted);
+  font-size: var(--font-size-small);
+  color: var(--accent-color-primary);
+}
+
+.timeline__txt--bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/*  */
+/*  */
+/* RESPONSIVENESS ================================================== */
+/*  */
+
+/* ====== MOBILE ====== */
+/* MOBILE & LANDSCAPE */
+/* Already Default */
+
+/* MOBILE & LANDSCAPE */
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+  .timeline__card {
+    height: 100%;
+    padding: 0.5rem 2rem;
+  }
+
+  .timeline__progress-bar__container {
+    gap: 1rem;
+  }
+
+  .timeline__full-bar {
+    height: 0.25rem;
+  }
 }

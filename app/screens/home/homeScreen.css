@@ -1,0 +1,227 @@
+/* Main container */
+.main-home__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Primary containers */
+.main-home__info__container {
+  width: 100%;
+  height: 40%;
+  min-height: 40%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--accent-color-primary);
+}
+
+.main-home__apps__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Secondary containers */
+.main-home__title__container,
+.main-home__apps-title__container {
+  width: 100%;
+  height: 5rem;
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 1px dashed var(--accent-color-primary); */
+}
+
+.main-home__info-text__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main-home__apps-carrousel__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Tertiary containers */
+.main-home__apps-carrousel {
+  background-color: rgba(139, 63, 0, 0.05);
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.main-home__btns-apps__container {
+  /* background-color: lightblue; */
+  width: 100%;
+  height: 6rem;
+  min-height: 6rem;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Child elements */
+.main-home__title,
+.main-home__apps-title {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-normal);
+  color: var(--txt-color-high-contrast);
+  line-height: 2.5rem;
+  font-family: var(--font-family-primary);
+}
+
+.main-home__cities-names {
+  font-size: 3rem;
+  font-weight: var(--font-weight-normal);
+  color: var(--txt-color-high-contrast);
+  line-height: 2.5rem;
+  font-family: var(--font-family-secondary);
+}
+
+.main-home__cities-names__normal-txt {
+  text-align: center;
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-normal);
+  color: var(--txt-color-high-contrast);
+  line-height: 2.5rem;
+  font-family: var(--font-family-primary);
+}
+
+.main-home__load-content {
+  text-align: center;
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-normal);
+  color: var(--txt-color-high-contrast);
+  line-height: 2.5rem;
+  font-family: var(--font-family-primary);
+}
+
+/* ACTION CONTAINER */
+.home__action-container {
+  width: 100%;
+  height: 100%;
+  max-width: 60rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'timeline timeline'
+    'btn-cancel btn-next-step';
+  column-gap: 1rem;
+}
+
+.timeline__card {
+  grid-area: timeline;
+  align-self: center;
+  justify-self: center;
+}
+
+#btn-content__home--cancel-job {
+  grid-area: btn-cancel;
+  width: 100%;
+  align-self: center;
+}
+
+#btn-content__home--receiver-check-in {
+  grid-area: btn-next-step;
+  width: 100%;
+  align-self: center;
+}
+
+/*  */
+/*  */
+/* RESPONSIVENESS ================================================== */
+/*  */
+
+/* ====== MOBILE ====== */
+/* MOBILE & LANDSCAPE */
+/* Already Default */
+
+/* MOBILE & LANDSCAPE */
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+  .main-home__container {
+    flex-direction: row;
+  }
+
+  .main-home__info__container {
+    height: 100%;
+    width: 50%;
+    border: none;
+    border-right: 1px solid var(--accent-color-primary);
+  }
+
+  .main-home__apps__container {
+    height: 100%;
+    width: 50%;
+  }
+
+  .home__action-container {
+    max-width: 100%;
+    grid-template-columns: 1fr 40rem 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'btn-cancel timeline btn-next-step';
+    column-gap: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  #btn-content__home--cancel-job {
+    height: 100%;
+    width: 100%;
+  }
+
+  #btn-content__home--receiver-check-in {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* TABLET & LANDSCAPE */
+@media screen and (min-device-width: 1024px) and (orientation: landscape) {
+  .main-home__container {
+    flex-direction: row;
+  }
+
+  .main-home__info__container {
+    height: 100%;
+    width: 50%;
+    border: none;
+    border-right: 1px solid var(--accent-color-primary);
+  }
+
+  .main-home__apps__container {
+    height: 100%;
+    width: 50%;
+  }
+
+  .home__action-container {
+    max-width: 100%;
+    grid-template-columns: 1fr 50rem 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'btn-cancel timeline btn-next-step';
+    column-gap: 4rem;
+  }
+
+  #btn-content__home--cancel-job {
+    height: 100%;
+    width: 100%;
+  }
+
+  #btn-content__home--receiver-check-in {
+    height: 100%;
+    width: 100%;
+  }
+}

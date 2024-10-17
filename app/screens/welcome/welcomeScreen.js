@@ -7,12 +7,13 @@ import {
 import { btnContent } from '../../components/buttons/btnContent/btnContent.js';
 
 import { appVersion } from '../../components/appVersion/appVersion.js';
+import { btnGetStartedScript } from '../../scripts/getStartedScript/getStartedScript.js';
 
 export let btnWelcomeGetStarted;
 export let btnWelcomeAbout;
 
 export function welcomeScreen() {
-  templateDefault('welcome-screen');
+  templateDefault('welcome');
 
   // MAIN CONTENT CONTAINER
   // Main card
@@ -68,4 +69,6 @@ export function welcomeScreen() {
 
   actionContainer.appendChild(welcomeAppVersion);
   mainActionCard.appendChild(actionContainer);
+
+  btnGetStartedScript();
 }

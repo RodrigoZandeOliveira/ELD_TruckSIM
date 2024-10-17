@@ -1,0 +1,36 @@
+.btn-content__small {
+  padding: 1rem 4rem;
+  border-radius: 100rem;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+}
+
+.btn-content__small__label {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  color: var(--txt-high-contrast);
+}
+
+/* Different types of content buttons */
+.btn--primary {
+  background-color: var(--accent-color-primary);
+}
+
+.btn--primary:active {
+  background-color: var(--accent-color-primary-active);
+}
+
+.btn--secondary {
+  border: 0.1rem solid var(--accent-color-primary);
+}
+
+.btn--secondary:active {
+  background-color: var(--accent-color-secondary);
+  border: 0.1rem solid var(--accent-color-secondary);
+}
+
+.btn--secondary--current {
+  background-color: var(--accent-color-secondary);
+  border: 0.1rem solid var(--accent-color-secondary);
+}

@@ -17,11 +17,10 @@ import {
 } from '../../components/form/loginForm/loginForm.js';
 const loginFormComponent = loginForm();
 
-// Import App Version
-import { appVersion } from '../../components/appVersion/appVersion.js';
-const appVersionComponent = appVersion();
-
 import { btnContent } from '../../components/buttons/btnContent/btnContent.js';
+
+import { btnLoginNextScript } from '../../scripts/loginScript/loginNextScript.js';
+import { btnLoginBackScript } from '../../scripts/loginScript/loginBackScript.js';
 
 // Export the login screen
 export function loginScreen() {
@@ -53,7 +52,7 @@ export function loginScreen() {
   // Btn : Back
   const btnLoginBack = btnContent(
     'Back',
-    'login__back',
+    'login--back',
     'btn--secondary',
     'btn--secondary-small'
   );
@@ -71,5 +70,8 @@ export function loginScreen() {
 
   mainContentCard.appendChild(mainLoginContainer);
 
-  return { mainContentCard, mainActionCard };
+  btnLoginNextScript(); // Login Script : Next page
+  btnLoginBackScript(); // Login Script : Preview page
+
+  // return { mainContentCard, mainActionCard };
 }

@@ -1,7 +1,7 @@
 import { loginScreen } from '../../screens/login/loginScreen.js';
 
-export function btnGetStarted() {
-  const screenToRemove = document.querySelector('#screen__welcome-screen');
+export function btnGetStartedScript() {
+  const screenToRemove = document.querySelector('#screen__welcome');
   const btnWelcomeGetStarted = document.querySelector(
     '#btn-content__welcome__get-started'
   );

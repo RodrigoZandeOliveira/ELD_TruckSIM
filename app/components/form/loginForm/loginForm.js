@@ -7,7 +7,7 @@ const inputFieldDriver = inputField(`Driver's name`, 'driver-name');
 import { btnContent } from '../../buttons/btnContent/btnContent.js';
 export const btnContentLogin = btnContent(
   'Login',
-  'btn__login',
+  'login--next',
   'btn--primary'
 );
 

@@ -36,7 +36,8 @@
 
 /* Butons */
 @import url(../components/buttons/btnSquareSmall/btnSquareSmall.css);
-@import url(../components/buttons/btnContent/btnContent.css);
+@import url(../components/buttons/btnContent/btnContentBig.css);
+@import url(../components/buttons/btnContentSmall/btnContentSmall.css);
 @import url(../components/buttons/btnApp/btnApp.css);
 @import url(../components/buttons/btnSteps/btnSteps.css);
 
@@ -46,6 +47,9 @@
 
 /* Timeline */
 @import url(../components/timeline/timeline.css);
+
+/* Apps Carrousel */
+@import url(../components/appsCarrousel/appsCarrousel.css);
 
 /* App Version */
 @import url(../components/appVersion/appVersion.css);
