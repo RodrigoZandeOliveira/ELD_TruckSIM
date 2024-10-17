@@ -64,12 +64,12 @@ export function homeScreen() {
   mainHomeLoadContent.textContent =
     'Transporting food with a total weight of 60.000lbs';
 
-  // BTN : Bill of Lading
-  const btnHomeBillOfLading = btnContentSmall(
-    'Bill of lading',
-    'home--bill-of-lading',
-    'btn--secondary'
-  );
+  // // BTN : Bill of Lading
+  // const btnHomeBillOfLading = btnContentSmall(
+  //   'Bill of lading',
+  //   'home--bill-of-lading',
+  //   'btn--secondary'
+  // );
 
   //
 
@@ -137,7 +137,7 @@ export function homeScreen() {
 
   mainHomeInfoTextContainer.appendChild(mainHomeCities);
   mainHomeInfoTextContainer.appendChild(mainHomeLoadContent);
-  mainHomeInfoTextContainer.appendChild(btnHomeBillOfLading);
+  // mainHomeInfoTextContainer.appendChild(btnHomeBillOfLading);
 
   mainHomeInfoContainer.appendChild(mainHomeTitleContainer);
   mainHomeInfoContainer.appendChild(mainHomeInfoTextContainer);
