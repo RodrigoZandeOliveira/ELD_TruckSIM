@@ -7,6 +7,7 @@ import {
 import { btnContent } from '../../components/buttons/btnContent/btnContent.js';
 import { btnContentSmall } from '../../components/buttons/btnContentSmall/btnContentSmall.js';
 import { timeline } from '../../components/timeline/timeline.js';
+import { appsSlider } from '../../components/appsSlider/appsSlider.js';
 
 export function homeScreen() {
   templateDefault('home-screen');
@@ -84,6 +85,8 @@ export function homeScreen() {
   const mainHomeAppsCarrousel = document.createElement('div');
   mainHomeAppsCarrousel.setAttribute('class', 'main-home__apps-carrousel');
 
+  const appsSliderComponent = appsSlider();
+
   // APPS BTN CATEGORY CONTAINER
   const mainHomeBtnAppsContainer = document.createElement('div');
   mainHomeBtnAppsContainer.setAttribute(
@@ -147,6 +150,8 @@ export function homeScreen() {
 
   mainHomeAppsCarrouselContainer.appendChild(mainHomeAppsCarrousel);
   mainHomeAppsCarrouselContainer.appendChild(mainHomeBtnAppsContainer);
+
+  mainHomeAppsCarrousel.appendChild(appsSliderComponent);
 
   mainHomeAppsContainer.appendChild(mainHomeAppsTitleContainer);
   mainHomeAppsContainer.appendChild(mainHomeAppsCarrouselContainer);
