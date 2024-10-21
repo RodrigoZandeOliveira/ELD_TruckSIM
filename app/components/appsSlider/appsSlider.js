@@ -1,3 +1,6 @@
+// To do:
+// Create the button card separately and import to the appsSlider();
+
 export function appsSlider() {
   const slider = document.createElement('div');
   slider.setAttribute('class', 'slider');

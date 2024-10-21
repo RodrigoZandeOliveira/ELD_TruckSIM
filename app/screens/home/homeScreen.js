@@ -8,6 +8,7 @@ import { btnContent } from '../../components/buttons/btnContent/btnContent.js';
 import { btnContentSmall } from '../../components/buttons/btnContentSmall/btnContentSmall.js';
 import { timeline } from '../../components/timeline/timeline.js';
 import { appsSlider } from '../../components/appsSlider/appsSlider.js';
+import { deliveryStatus } from '../../scripts/deliveryStatusScript/deliveryStatusScript.js';
 
 export function homeScreen() {
   templateDefault('home-screen');
@@ -17,17 +18,9 @@ export function homeScreen() {
   const mainHomeContainer = document.createElement('div');
   mainHomeContainer.setAttribute('class', 'main-home__container');
 
-  // Information container
-  const mainHomeInfoContainer = document.createElement('div');
-  mainHomeInfoContainer.setAttribute('class', 'main-home__info__container');
-
   // Apps container
   const mainHomeAppsContainer = document.createElement('div');
   mainHomeAppsContainer.setAttribute('class', 'main-home__apps__container');
-
-  // Screen title container
-  const mainHomeTitleContainer = document.createElement('div');
-  mainHomeTitleContainer.setAttribute('class', 'main-home__title__container');
 
   // Apps title container
   const mainHomeAppsTitleContainer = document.createElement('div');
@@ -36,43 +29,13 @@ export function homeScreen() {
     'main-home__apps-title__container'
   );
 
-  // Screen Title
-  const mainHomeTitle = document.createElement('h2');
-  mainHomeTitle.setAttribute('class', 'main-home__title');
-  mainHomeTitle.textContent = 'Delivery in progress'; // Has to be adaptable
-
   // Apps Title
   const mainHomeAppsTitle = document.createElement('h2');
   mainHomeAppsTitle.setAttribute('class', 'main-home__apps-title');
   mainHomeAppsTitle.textContent = 'Apps';
 
-  // Info Text Container
-  const mainHomeInfoTextContainer = document.createElement('div');
-  mainHomeInfoTextContainer.setAttribute(
-    'class',
-    'main-home__info-text__container'
-  );
-
-  // TEXT : From City A to City B
-  const mainHomeCities = document.createElement('h3');
-  mainHomeCities.setAttribute('class', 'main-home__cities-names');
-  mainHomeCities.innerHTML = `DENVER <span class:"main-home__cities-names__normal-txt">to </span>SEATTLE`;
-  // mainHomeCities.innerHTML = `${fromCity} <span class:"main-home__cities-names__normal-txt">to </span> ${toCity}`;
-
-  // TEXT : Load "Content" and "Total Weight"
-  const mainHomeLoadContent = document.createElement('p');
-  mainHomeLoadContent.setAttribute('class', 'main-home__load-content');
-  mainHomeLoadContent.textContent =
-    'Transporting food with a total weight of 60.000lbs';
-
-  // // BTN : Bill of Lading
-  // const btnHomeBillOfLading = btnContentSmall(
-  //   'Bill of lading',
-  //   'home--bill-of-lading',
-  //   'btn--secondary'
-  // );
-
-  //
+  // DELIVERY STATUS
+  const deliveryStatusComponent = deliveryStatus();
 
   // APPS CARROUSEL CONTAINER
   const mainHomeAppsCarrouselContainer = document.createElement('div');
@@ -135,15 +98,7 @@ export function homeScreen() {
   const timelineComponent = timeline();
 
   // APPEND CHILD
-  mainHomeTitleContainer.appendChild(mainHomeTitle);
   mainHomeAppsTitleContainer.appendChild(mainHomeAppsTitle);
-
-  mainHomeInfoTextContainer.appendChild(mainHomeCities);
-  mainHomeInfoTextContainer.appendChild(mainHomeLoadContent);
-  // mainHomeInfoTextContainer.appendChild(btnHomeBillOfLading);
-
-  mainHomeInfoContainer.appendChild(mainHomeTitleContainer);
-  mainHomeInfoContainer.appendChild(mainHomeInfoTextContainer);
 
   mainHomeBtnAppsContainer.appendChild(btnHomeRoadApps);
   mainHomeBtnAppsContainer.appendChild(btnHomeDriverApps);
@@ -156,16 +111,12 @@ export function homeScreen() {
   mainHomeAppsContainer.appendChild(mainHomeAppsTitleContainer);
   mainHomeAppsContainer.appendChild(mainHomeAppsCarrouselContainer);
 
-  mainHomeContainer.appendChild(mainHomeInfoContainer);
+  mainHomeContainer.appendChild(deliveryStatusComponent);
   mainHomeContainer.appendChild(mainHomeAppsContainer);
-
-  // btnsActionContainer.appendChild(btnCancelJob);
-  // btnsActionContainer.appendChild(btnDeliveryNextStep);
 
   actionContainer.appendChild(timelineComponent);
   actionContainer.appendChild(btnCancelJob);
   actionContainer.appendChild(btnDeliveryNextStep);
-  // actionContainer.appendChild(btnsActionContainer);
 
   mainContentCard.appendChild(mainHomeContainer);
   mainActionCard.appendChild(actionContainer);

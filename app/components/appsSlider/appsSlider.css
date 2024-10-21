@@ -17,7 +17,22 @@
 .slider__item-card {
   width: 75%;
   height: 100%;
+  max-width: 40rem;
+  max-height: 50rem;
   background-color: var(--accent-color-primary);
   border-radius: 1.5rem;
   flex-shrink: 0;
+}
+
+/*  */
+/*  */
+/* RESPONSIVENESS ================================================== */
+/*  */
+
+/* ====== MOBILE ====== */
+/* MOBILE & LANDSCAPE */
+/* Already Default */
+
+/* MOBILE & LANDSCAPE */
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
 }
