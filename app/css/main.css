@@ -48,6 +48,9 @@
 /* Timeline */
 @import url(../components/timeline/timeline.css);
 
+/* Delivery Status */
+@import url(../components/deliveryStatus/deliveryStatus.css);
+
 /* Apps Carrousel */
 @import url(../components/appsSlider/appsSlider.css);
 

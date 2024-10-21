@@ -7,14 +7,6 @@
 }
 
 /* Primary containers */
-.main-home__info__container {
-  width: 100%;
-  height: 30%;
-  min-height: 30%;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid var(--accent-color-primary);
-}
 
 .main-home__apps__container {
   width: 100%;
@@ -24,7 +16,7 @@
 }
 
 /* Secondary containers */
-.main-home__title__container,
+
 .main-home__apps-title__container {
   width: 100%;
   height: 5rem;
@@ -33,16 +25,6 @@
   justify-content: center;
   align-items: center;
   /* border-bottom: 1px dashed var(--accent-color-primary); */
-}
-
-.main-home__info-text__container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
 }
 
 .main-home__apps-carrousel__container {
@@ -74,35 +56,8 @@
 }
 
 /* Child elements */
-.main-home__title,
 .main-home__apps-title {
   font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-normal);
-  color: var(--txt-color-high-contrast);
-  line-height: 2.5rem;
-  font-family: var(--font-family-primary);
-}
-
-.main-home__cities-names {
-  font-size: 3rem;
-  font-weight: var(--font-weight-normal);
-  color: var(--txt-color-high-contrast);
-  line-height: 2.5rem;
-  font-family: var(--font-family-secondary);
-}
-
-.main-home__cities-names__normal-txt {
-  text-align: center;
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-normal);
-  color: var(--txt-color-high-contrast);
-  line-height: 2.5rem;
-  font-family: var(--font-family-primary);
-}
-
-.main-home__load-content {
-  text-align: center;
-  font-size: var(--font-size-small);
   font-weight: var(--font-weight-normal);
   color: var(--txt-color-high-contrast);
   line-height: 2.5rem;
@@ -157,14 +112,6 @@
     flex-direction: row;
   }
 
-  .main-home__info__container {
-    height: 100%;
-    width: 50%;
-    border: none;
-    border-right: 1px solid var(--accent-color-primary);
-  }
-
-  .main-home__title__container,
   .main-home__apps-title__container {
     height: 4rem;
     min-height: 4rem;
@@ -209,13 +156,6 @@
 @media screen and (min-device-width: 1024px) and (orientation: landscape) {
   .main-home__container {
     flex-direction: row;
-  }
-
-  .main-home__info__container {
-    height: 100%;
-    width: 50%;
-    border: none;
-    border-right: 1px solid var(--accent-color-primary);
   }
 
   .main-home__apps__container {

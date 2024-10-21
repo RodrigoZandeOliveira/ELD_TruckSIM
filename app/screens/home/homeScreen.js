@@ -8,7 +8,7 @@ import { btnContent } from '../../components/buttons/btnContent/btnContent.js';
 import { btnContentSmall } from '../../components/buttons/btnContentSmall/btnContentSmall.js';
 import { timeline } from '../../components/timeline/timeline.js';
 import { appsSlider } from '../../components/appsSlider/appsSlider.js';
-import { deliveryStatus } from '../../scripts/deliveryStatusScript/deliveryStatusScript.js';
+import { deliveryStatus } from '../../components/deliveryStatus/deliveryStatus.js';
 
 export function homeScreen() {
   templateDefault('home-screen');
