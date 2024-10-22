@@ -1,0 +1,112 @@
+/* Main container */
+.main-new-job__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-job-screen__title__container {
+  width: 100%;
+  height: 4rem;
+  min-height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: orangered; */
+}
+
+.new-job__title {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
+  color: var(--txt-color-high-contrast);
+  line-height: 2.5rem;
+  font-family: var(--font-family-primary);
+}
+
+/* ACTION CONTAINER */
+.new-job__action-container {
+  width: 100%;
+  height: 100%;
+  max-width: 60rem;
+  display: block;
+}
+
+.new-job__action-container--two-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'empty empty'
+    'new-job-back new-job-selected';
+  column-gap: 1rem;
+}
+
+.new-job__empty-div {
+  grid-area: empty;
+  /* background-color: purple; */
+}
+
+#btn-content__new-job--back {
+  grid-area: new-job-back;
+  align-self: center;
+  width: 100%;
+}
+
+#btn-content__new-job--job-selected {
+  grid-area: new-job-selected;
+  align-self: center;
+  width: 100%;
+}
+
+/*  */
+/*  */
+/* RESPONSIVENESS ================================================== */
+/*  */
+
+/* ====== MOBILE ====== */
+/* MOBILE & LANDSCAPE */
+/* Already Default */
+
+/* MOBILE & LANDSCAPE */
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+  .new-job__action-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .new-job__action-container--two-btn {
+    max-width: 100%;
+    grid-template-columns: 1fr 40rem 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'btn-content-secondary timeline btn-content-primary';
+    column-gap: 1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* TABLET & LANDSCAPE */
+@media screen and (min-device-width: 1024px) and (orientation: landscape) {
+  .new-job__action-container {
+    max-width: 100%;
+    grid-template-columns: 1fr 50rem 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'btn-cancel timeline btn-next-step';
+    column-gap: 4rem;
+  }
+
+  .new-job__action-container--two-btn {
+    max-width: 100%;
+    grid-template-columns: 1fr 40rem 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'btn-content-secondary timeline btn-content-primary';
+    column-gap: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  #btn-content__new-job--job-selected {
+    height: 100%;
+    width: 100%;
+  }
+}

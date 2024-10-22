@@ -9,6 +9,7 @@ import { btnContentSmall } from '../../components/buttons/btnContentSmall/btnCon
 import { timeline } from '../../components/timeline/timeline.js';
 import { appsSlider } from '../../components/appsSlider/appsSlider.js';
 import { deliveryStatus } from '../../components/deliveryStatus/deliveryStatus.js';
+import { btnNewJobScript } from '../../scripts/newJobScript/newJobScript.js';
 
 export function homeScreen() {
   templateDefault('home-screen');
@@ -83,7 +84,7 @@ export function homeScreen() {
   const btnsActionContainer = document.createElement('div');
   btnsActionContainer.setAttribute('class', 'action__btns__container');
 
-  // BTN : Cancel Job
+  // BTN : New Job
   const btnNewJob = btnContent('New Job', 'home--new-job', 'btn--primary');
 
   // TIMELINE
@@ -111,4 +112,6 @@ export function homeScreen() {
 
   mainContentCard.appendChild(mainHomeContainer);
   mainActionCard.appendChild(actionContainer);
+
+  btnNewJobScript();
 }

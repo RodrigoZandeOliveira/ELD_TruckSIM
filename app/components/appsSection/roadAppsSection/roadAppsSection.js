@@ -31,6 +31,7 @@ export let sectionBtnAppsTitle;
 export function roadAppsSection(title) {
   sectionBtnAppsTitle = title;
 
+  // Build HTML
   const sectionTitle = document.createElement('h3');
   sectionTitle.setAttribute('class', 'section-apps__title');
   sectionTitle.textContent = sectionBtnAppsTitle;
