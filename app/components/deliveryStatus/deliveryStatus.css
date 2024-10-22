@@ -1,5 +1,5 @@
 /* PRIMARY CONTAINER */
-.main-home__info__container {
+.delivery-status__info__container {
   width: 100%;
   height: 30%;
   min-height: 30%;
@@ -9,16 +9,16 @@
 }
 
 /* SECONDARIES CONTAINER */
-.main-home__title__container {
+.delivery-status__title__container {
   width: 100%;
-  height: 5rem;
-  min-height: 5rem;
+  height: 4rem;
+  min-height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-home__info-text__container {
+.delivery-status__info-text__container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -29,23 +29,23 @@
 }
 
 /* CHILD COMPONENTS */
-.main-home__title {
-  font-size: var(--font-size-medium);
+.delivery-status__title {
+  font-size: var(--font-size-small);
   font-weight: var(--font-weight-normal);
   color: var(--txt-color-high-contrast);
   line-height: 2.5rem;
   font-family: var(--font-family-primary);
 }
 
-.main-home__cities-names {
+.delivery-status__cities-names {
   font-size: 3rem;
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   color: var(--txt-color-high-contrast);
   line-height: 2.5rem;
   font-family: var(--font-family-secondary);
 }
 
-.main-home__cities-names__normal-txt {
+.delivery-status__cities-names__normal-txt {
   text-align: center;
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-normal);
@@ -54,7 +54,7 @@
   font-family: var(--font-family-primary);
 }
 
-.main-home__load-content {
+.delivery-status__load-content {
   text-align: center;
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-normal);
@@ -74,14 +74,14 @@
 
 /* MOBILE & LANDSCAPE */
 @media screen and (max-device-width: 1024px) and (orientation: landscape) {
-  .main-home__info__container {
+  .delivery-status__info__container {
     height: 100%;
     width: 50%;
     border: none;
     border-right: 1px solid var(--accent-color-primary);
   }
 
-  .main-home__title__container {
+  .delivery-status__title__container {
     height: 4rem;
     min-height: 4rem;
   }
@@ -89,7 +89,7 @@
 
 /* TABLET & LANDSCAPE */
 @media screen and (min-device-width: 1024px) and (orientation: landscape) {
-  .main-home__info__container {
+  .delivery-status__info__container {
     height: 100%;
     width: 50%;
     border: none;

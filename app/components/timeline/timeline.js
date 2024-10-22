@@ -3,6 +3,10 @@
 // TIMELINE
 //
 
+// Time : 📌 Convert to a function
+const deliveryTime =
+  '<span class="timeline__txt--bold">--</span> h <span class="timeline__txt--bold">--</span> min';
+
 export function timeline() {
   // Timeline Card
   const timelineCard = document.createElement('div');
@@ -35,8 +39,7 @@ export function timeline() {
   // Timeline Progess Bar : txt Time Passed
   const timelineTxtTimer = document.createElement('p');
   timelineTxtTimer.setAttribute('class', 'timeline__txt');
-  timelineTxtTimer.innerHTML =
-    '<span class="timeline__txt--bold">1</span> h <span class="timeline__txt--bold">32</span> min';
+  timelineTxtTimer.innerHTML = deliveryTime;
 
   // Timeline Progess Bar : txt Shipper
   const timelineTxtReceiver = document.createElement('p');

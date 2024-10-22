@@ -75,24 +75,16 @@ export function homeScreen() {
   // ACTION CONTAINER
   // Action container
   const actionContainer = document.createElement('div');
-  actionContainer.setAttribute('class', 'home__action-container');
+  actionContainer.setAttribute(
+    'class',
+    'home__action-container home__action-container--one-btn'
+  );
 
   const btnsActionContainer = document.createElement('div');
   btnsActionContainer.setAttribute('class', 'action__btns__container');
 
   // BTN : Cancel Job
-  const btnCancelJob = btnContent(
-    'Cancel Job',
-    'home--cancel-job',
-    'btn--secondary'
-  );
-
-  // BTN : Cancel Job
-  const btnDeliveryNextStep = btnContent(
-    'Receiver<br>Check-in',
-    'home--receiver-check-in',
-    'btn--primary'
-  );
+  const btnNewJob = btnContent('New Job', 'home--new-job', 'btn--primary');
 
   // TIMELINE
   const timelineComponent = timeline();
@@ -115,8 +107,7 @@ export function homeScreen() {
   mainHomeContainer.appendChild(mainHomeAppsContainer);
 
   actionContainer.appendChild(timelineComponent);
-  actionContainer.appendChild(btnCancelJob);
-  actionContainer.appendChild(btnDeliveryNextStep);
+  actionContainer.appendChild(btnNewJob);
 
   mainContentCard.appendChild(mainHomeContainer);
   mainActionCard.appendChild(actionContainer);
